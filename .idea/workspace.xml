@@ -41,10 +41,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="50" selection-start="2743" selection-end="2743" vertical-scroll-proportion="0.6171694">
+            <state line="57" column="50" selection-start="2743" selection-end="2743" vertical-scroll-proportion="-5.2156863">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="19" selection-start="178" selection-end="178" vertical-scroll-proportion="0.46680498">
               <folding />
             </state>
           </provider>
@@ -62,6 +71,7 @@
       <list>
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -416,7 +426,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="50" selection-start="2743" selection-end="2743" vertical-scroll-proportion="0.6171694">
+        <state line="57" column="50" selection-start="2743" selection-end="2743" vertical-scroll-proportion="-5.2156863">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="19" selection-start="178" selection-end="178" vertical-scroll-proportion="0.46680498">
           <folding />
         </state>
       </provider>
