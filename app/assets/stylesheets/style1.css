@@ -1221,7 +1221,7 @@ ul.pagination .arrow [class^="icon-"]:before, ul.pagination .arrow [class*=" ico
 /* Note: Design for a width of 480px */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .pricing_plan4,#.pricing_plan3,.pricing_plan2,.pricing_plan1{
+    .pricing_plan4,.pricing_plan3,.pricing_plan2,.pricing_plan1{
         width: 50%;
     }
 
