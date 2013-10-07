@@ -67,3 +67,27 @@
   </div>
 
 </div>
+
+<!-- Countdown -->
+<%= javascript_include_tag "jquery.countdown" %>
+
+<script type="text/javascript">
+    $(function() {
+        $('div#clock').countdown("2013/10/18", function(event) {
+            var $this = $(this);
+            switch(event.type) {
+                case "seconds":
+                case "minutes":
+                case "hours":
+                case "days":
+                case "weeks":
+                case "daysLeft":
+                    $this.find('span#'+event.type).html(event.value);
+                    break;
+                case "finished":
+                    $this.hide();
+                    break;
+            }
+        });
+    });
+</script>
