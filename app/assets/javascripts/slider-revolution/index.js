@@ -10,14 +10,5 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery
-//= require jquery_ujs
-//= require foundation.min
-//= require modernizr.foundation
-//= require_tree ./slider-revolution
-//= require_tree ./tipsy
-//= require_tree ./caroulfredsel
-//= require_tree ./touchswipe
-//= require_tree ./jtweetsanywhere
-//= require_tree ./titan
-//= require_tree ./app-head
+//= require ./jquery.themepunch.plugins.min
+//= require ./jquery.themepunch.revolution.min

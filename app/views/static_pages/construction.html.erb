@@ -73,10 +73,10 @@
 
 <!-- Countdown -->
 <%= javascript_include_tag "jquery.countdown" %>
- 
 <script type="text/javascript">
+$( document ).ready(function() {
     $(function() {
-        $('div#clock').countdown("2013/10/24", function(event) {
+        $('div#clock').countdown("2013/10/27", function(event) {
             var $this = $(this);
             switch(event.type) {
                 case "seconds":
@@ -93,4 +93,5 @@
             }
         });
     });
+});
 </script>
