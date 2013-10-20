@@ -100,7 +100,7 @@
 #lightbox-loading div {
     width: 18px;
     height: 18px;
-    background: url(lightbox_loading.gif) center center no-repeat;
+    background: url(/assets/titan/lightbox_loading.gif) center center no-repeat;
 }
 
 .lightbox-close {
