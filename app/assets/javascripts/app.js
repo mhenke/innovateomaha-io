@@ -86,9 +86,6 @@ $(function() {
         });
 		
 // Flexi Slider
-
-
-
   <!-- Target sliders individually with different properties -->
   $(window).load(function() {
 	  
@@ -118,6 +115,3 @@ $(function() {
         }
 	});
   });
-
-
-	

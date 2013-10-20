@@ -1,4 +1,4 @@
-;(function (window, document, $) {
+(function (window, document, $) {
   // Set the negative margin on the top menu for slide-menu pages
   var $selector1 = $('#topMenu'),
     events = 'click.fndtn';
