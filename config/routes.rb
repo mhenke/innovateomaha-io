@@ -6,6 +6,7 @@ Innovateomaha::Application.routes.draw do
   get "static_pages/blog"
   get "static_pages/portfolio"
   get "static_pages/register"
+  get "users/newsletter"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

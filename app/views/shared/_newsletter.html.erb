@@ -1,5 +1,5 @@
 <!-- // // // // // // // // // // -->
-
+<% @user = "User" %>
 <div class="eight columns">
 
   <h2>Sign up for our newsletter</h2>
@@ -10,14 +10,17 @@
 <!-- // // // // // // // // // // -->
 
 <div class="four columns">
+  <%= form_for @user, url: '/users/newsletter', remote: true do |f| %>  
   <div class="row collapse newsletter-input">
     <div class="eight mobile-three columns">
-      <input type="text" placeholder="Enter your email address" />
+      <%= f.text_field :user, placeholder:'Enter your email address' %>
     </div>
     <div class="four mobile-one columns">
-      <a href="#" class="button expand">Subscribe</a>
+      <%= f.submit "Subscribe", class:"button expand" %>
     </div>
   </div>
+
+<% end %>
 </div>
 
 <!-- // // // // // // // // // // -->
