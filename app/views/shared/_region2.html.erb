@@ -34,25 +34,25 @@
 
 
       			<section><!-- Nav Section -->
-      			<ul class="right">
+      			<ul class="right" id="nav">
         
         			<li class="has-dropdown">
-                <%= link_to "Home", "home" %>
+                <%= link_to "Home", "home", id: 'home_nav', class: ( 'active' if yield(:title) == 'Home') %>
         			</li>
         
         			<li class="has-dropdown" >
-        				<%= link_to "About", "about" %>   
+        				<%= link_to "About", "about", id: 'about_nav', class: ( 'active' if yield(:title) == 'About') %>   
         			</li>
         			<li class="has-dropdown">
-          				<%= link_to "Blog", "blog", :class => 'active' %>   
+          				<%= link_to "Blog", "blog", id: 'blog_nav', class: ( 'active' if yield(:title) == 'Blog') %>   
         			</li>
         
         			<li class="has-dropdown">
-          				<%= link_to "Portfolio", "portfolio" %> 
+          				<%= link_to "Portfolio", "portfolio", id: 'portfolio_nav', class: ( 'active' if yield(:title) == 'Portfolio') %> 
         			</li>
         
         			<li>
-                  <%= link_to "Contact", "contact" %> 
+                  <%= link_to "Contact", "contact", id: 'contact_nav', class: ( 'active' if yield(:title) == 'Contact') %> 
               </li>
         
       			</ul>

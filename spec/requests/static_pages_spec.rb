@@ -28,10 +28,15 @@ describe "Static Pages" do
 			visit '/static_pages/home' 
 			page.should have_selector('title', :text => "InnovateOmaha:: Home")
 		end
+
+		it "nav section should be highlighted" do
+			visit '/static_pages/home' 
+			page.find('#home_nav')['active']
+		end
 		
 	end
 
-	describe "About Us Page" do
+	describe "About Page" do
 
 
 		it "should have the content 'Who we are - take a look'" do
@@ -39,9 +44,14 @@ describe "Static Pages" do
 			page.should have_content('Who we are - take a look')
 		end
 
+		it "nav section should be highlighted" do
+			visit '/static_pages/about' 
+			page.find('#about_nav')['active']
+		end
+
 		it "should have correct title" do
 			visit '/static_pages/about' 
-			page.should have_selector('title', :text => "InnovateOmaha:: About Us")
+			page.should have_selector('title', :text => "InnovateOmaha:: About")
 		end
 		
 	end
@@ -57,6 +67,11 @@ describe "Static Pages" do
 			visit '/static_pages/contact' 
 			page.should have_selector('title', :text => "InnovateOmaha:: Contact")
 		end
+
+		it "nav section should be highlighted" do
+			visit '/static_pages/contact' 
+			page.find('#contact_nav')['active']
+		end
 		
 	end
 
@@ -71,6 +86,11 @@ describe "Static Pages" do
 			visit '/static_pages/blog' 
 			page.should have_selector('title', :text => "InnovateOmaha:: Blog")
 		end
+
+		it "nav section should be highlighted" do
+			visit '/static_pages/blog' 
+			page.find('#blog_nav')['active']
+		end
 		
 	end
 
@@ -84,6 +104,11 @@ describe "Static Pages" do
 		it "should have correct title" do
 			visit '/static_pages/portfolio' 
 			page.should have_selector('title', :text => "InnovateOmaha:: Portfolio")
+		end
+
+		it "nav section should be highlighted" do
+			visit '/static_pages/portfolio' 
+			page.find('#portfolio_nav')['active']
 		end
 		
 	end
