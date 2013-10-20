@@ -23,4 +23,5 @@
 //= require_tree ./titan
 //= require app-head
 //= require_tree ./flexislider
+//= require app
 $(function(){ $(document).foundation(); });
