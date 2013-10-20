@@ -11,16 +11,16 @@
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" id="view" content="width=device-width minimum-scale=1, maximum-scale=1" />
 
-  <title>InnovateOmaha:: <%= yield(:title) %></title>
+  <title><%= full_title(yield(:title)) %></title>
 
   <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= stylesheet_link_tag "titan/jquery.titanlighbox", :media => "all" %>
 
   <!-- Google Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
   <!-- Included JS Files (Compressed) -->
   <%= javascript_include_tag "application" %>
-
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
@@ -35,7 +35,11 @@
 
 <%= render :partial => 'shared/region2' %>
 
-<%= render :partial => 'shared/region3' %>
+<% if defined? @home_page %>
+  <%= render :partial => 'shared/region3home' %>
+<% else %>
+  <%= render :partial => 'shared/region3' %>
+<% end %>
 
 <!-- maincontent -->
 <%= render :partial => 'shared/region4' %>
@@ -47,11 +51,62 @@
 
 
 <!-- Included JS Files (Uncompressed) -->
-
+  <!--
+  
+  
+  <script src="assets/jquery.foundation.mediaQueryToggle.js"></script>
+  
+  <script src="assets/jquery.foundation.forms.js"></script>
+  
+  <script src="assets/jquery.foundation.reveal.js"></script>
+  
+  <script src="assets/jquery.foundation.navigation.js"></script>
+  
+  <script src="assets/jquery.foundation.buttons.js"></script>
+  
+  <script src="assets/jquery.foundation.tabs.js"></script>
+  
+  <script src="assets/jquery.foundation.tooltips.js"></script>
+  
+  <script src="assets/jquery.foundation.accordion.js"></script>
+  
+  <script src="assets/jquery.placeholder.js"></script>
+  
+  <script src="assets/jquery.foundation.alerts.js"></script>
+  
+  <script src="assets/jquery.foundation.topbar.js"></script>
+  
+  -->
 
 <!-- Back To Top -->
 <a href="#" class="scrollup">Scroll</a>
 <!-- End Back To Top -->
+
+<!-- Reveal Modal --> 
+  <div id="Login" class="reveal-modal login-modal">
+  
+    <h2>Login</h2>
+    <p>Please login using your credentials recived by email when you register.</p>
+      <form>
+        <label>Username</label>  
+        <input type="text" placeholder="UserName@TouchM.com" />
+  
+        <label>Password</label>
+        <input type="text" placeholder="insert password" />
+  
+        <p class="right"><a href="http://forums.orpalis.com/ucp.php?mode=sendpassword">I forgot my password</a> | <a href="http://forums.orpalis.com/ucp.php?mode=resend_act">Resend activation e-mail</a></p>
+
+        <input type="submit" class="medium button" value="Login!">
+  
+    </form>
+    
+      <a class="close-reveal-modal">&#215;</a>
+    
+  </div>   
+<!-- End Reveal Modal -->
+
+<!-- FlexSlider -->
+<%= javascript_include_tag "flexislider/jquery.flexslider.js", :defer => "defer" %>
 
 <!-- Initialize JS Plugins -->
  <%= javascript_include_tag "app.js" %>

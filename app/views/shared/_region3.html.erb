@@ -1,20 +1,50 @@
 <!-- Region 3 Wrap -->
 
-<div class="container region3wrap">
+  <div class="container region3wrap">  
+  <!-- Content Top -->  
+      <div class="row content_top">
+     <% if defined? @construction_page %>
 
-
-  <!-- Content Top -->
-  <div class="row content_top">
-
-    <div class="eight columns centered">
-
+     <div class="eight columns centered">
+       
       <h1 class="construction_title">Our Website is Under Construction</h1>
+     </div>
+     <% else %>
 
-    </div>
+      
+          
+        <div class="nine columns">
+         
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+            <li><a href="#">Pages</a></li>
+            <li class="current"><a href="#">About Us</a></li>
+        </ul>
 
+      </div>
+          
+          <div class="three columns">
+
+            <div class="row">
+              <div class="twelve columns">
+                  <div class="row collapse top_search">
+                      <div class="ten mobile-three columns">
+                        <input type="text" placeholder="Enter search terms" />
+                      </div>
+                      <div class="two mobile-one columns">
+                        <a href="#" class="button icon-search"></a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+      
+     <% end %>
+        </div>
+    <!-- End Content Top -->
+  	
+    
   </div>
-  <!-- End Content Top -->
-
-</div>
-
+  
 <!-- End Region 3 Wrap -->

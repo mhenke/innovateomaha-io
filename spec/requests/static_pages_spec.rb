@@ -4,9 +4,9 @@ describe "Static Pages" do
  
 	describe "Construction Page" do
 
-		it "should have the content 'Thanks for stopping by.'" do
+		it "should have the content 'Our Website is Under Construction'" do
 			visit '/static_pages/construction' 
-			page.should have_content('Thanks for stopping by.')
+			page.should have_content('Our Website is Under Construction')
 		end
 
 		it "should have correct title" do

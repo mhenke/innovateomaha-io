@@ -13,4 +13,5 @@
  *= require app
  *= require style1
  *= require color1
+ *= require ./titan/jquery.titanlighbox
  */

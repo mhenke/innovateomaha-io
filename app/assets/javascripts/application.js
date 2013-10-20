@@ -18,6 +18,7 @@
 //= require_tree ./tipsy
 //= require_tree ./caroulfredsel
 //= require_tree ./touchswipe
+//= require_tree ./titan
 //= require_tree ./jtweetsanywhere
 //= require_tree ./titan
-//= require_tree ./app-head
+//= require app-head
