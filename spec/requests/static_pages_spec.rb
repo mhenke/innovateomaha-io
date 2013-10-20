@@ -33,6 +33,12 @@ describe "Static Pages" do
 
 	describe "About Us Page" do
 
+
+		it "should have the content 'Who we are - take a look'" do
+			visit '/static_pages/about' 
+			page.should have_content('Who we are - take a look')
+		end
+
 		it "should have correct title" do
 			visit '/static_pages/about' 
 			page.should have_selector('title', :text => "InnovateOmaha:: About Us")
