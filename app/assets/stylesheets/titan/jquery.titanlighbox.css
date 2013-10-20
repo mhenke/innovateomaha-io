@@ -173,7 +173,7 @@
     overflow: hidden;
     display: none;
     z-index: 8010;
-    background: url(lightbox_overlay.png);
+    background: url(/assets/titan/lightbox_overlay.png);
 }
 
 .lightbox-overlay-fixed {
@@ -275,7 +275,7 @@
 .alt .lightbox-skin { border-radius: 5px }
 
 .alt .lightbox-close {
-    background: url(skin-alt/lightbox_close.png) no-repeat right top transparent;
+    background: url(/assets/titan/skin-alt/lightbox_close.png) no-repeat right top transparent;
     height: 28px;
     right: 11px;
     bottom: 8px;
@@ -288,14 +288,14 @@
 }
 
 .alt .lightbox-prev {
-    background-image: url(skin-alt/lightbox_left.png);
+    background-image: url(/assets/titan/skin-alt/lightbox_left.png);
     -moz-border-radius: 0 4px 4px 0;
     -webkit-border-radius: 0 4px 4px 0;
     border-radius: 0 4px 4px 0;
 }
 
 .alt .lightbox-next {
-    background-image: url(skin-alt/lightbox_right.png);
+    background-image: url(/assets/titan/skin-alt/lightbox_right.png);
     -moz-border-radius: 4px 0 0 4px;
     -webkit-border-radius: 4px 0 0 4px;
     border-radius: 4px 0 0 4px;
@@ -330,21 +330,21 @@
 
 .alt #lightbox-buttons a.btnPrev,
 .alt #lightbox-buttons a.btnPrev:hover {
-    background-image: url(skin-alt/button_prev.png);
+    background-image: url(/assets/titan/skin-alt/button_prev.png);
     width: 20px;
 }
 
 .alt #lightbox-buttons a.btnNext,
 .alt #lightbox-buttons a.btnNext:hover {
-    background-image: url(skin-alt/button_next.png);
+    background-image: url(/assets/titan/skin-alt/button_next.png);
     width: 20px;
 }
 
 .alt #lightbox-buttons a.btnPlay,
-.alt #lightbox-buttons a.btnPlay:hover { background-image: url(skin-alt/button_play.png) }
+.alt #lightbox-buttons a.btnPlay:hover { background-image: url(/assets/titan/skin-alt/button_play.png) }
 
 .alt #lightbox-buttons a.btnPlayOn,
-.alt #lightbox-buttons a.btnPlayOn:hover { background-image: url(skin-alt/button_pause.png) }
+.alt #lightbox-buttons a.btnPlayOn:hover { background-image: url(/assets/titan/skin-alt/button_pause.png) }
 
 @media (max-width: 767px) { 
     .alt .lightbox-close { display: none }
