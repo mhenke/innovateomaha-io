@@ -36,7 +36,14 @@
   // $('.block-grid.four-up>li:nth-child(4n+1)').css({clear: 'both'});
   // $('.block-grid.five-up>li:nth-child(5n+1)').css({clear: 'both'});
 
-  
+  // Hide address bar on mobile devices
+  if (Modernizr.touch) {
+    $(window).load(function () {
+      setTimeout(function () {
+        window.scrollTo(0, 1);
+      }, 0);
+    });
+  };
 
 })(jQuery, this);
 
