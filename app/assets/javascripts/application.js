@@ -23,4 +23,3 @@
 //= require_tree ./jtweetsanywhere
 //= require_tree ./titan
 //= require app-head
-$(function(){ $(document).foundation(); });
