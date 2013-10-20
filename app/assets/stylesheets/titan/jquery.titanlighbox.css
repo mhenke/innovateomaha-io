@@ -104,7 +104,7 @@
 }
 
 .lightbox-close {
-    background: url(skin-default/lightbox_close.png) no-repeat scroll right top #FFFFFF;
+    background: url(/assets/titan/skin-default/lightbox_close.png) no-repeat scroll right top #FFFFFF;
     cursor: pointer;
     height: 18px;
     position: absolute;
@@ -130,7 +130,7 @@
 }
 
 .lightbox-prev {
-    background: url(skin-default/lightbox_left.png) no-repeat center center #fff;
+    background: url(/assets/titan/skin-default/lightbox_left.png) no-repeat center center #fff;
     left: 0;
     -moz-border-radius: 0 2px 2px 0;
     -webkit-border-radius: 0 2px 2px 0;
@@ -139,7 +139,7 @@
 }
 
 .lightbox-next {
-    background: url(skin-default/lightbox_right.png) center center no-repeat #fff;
+    background: url(/assets/titan/skin-default/lightbox_right.png) center center no-repeat #fff;
     right: 0;
     -moz-border-radius: 2px 0 0 2px;
     -webkit-border-radius: 2px 0 0 2px;
@@ -229,26 +229,26 @@
 }
 
 #lightbox-buttons a.btnPrev {
-    background: url(skin-default/button_prev.png) center center no-repeat;
+    background: url(/assets/titan/skin-default/button_prev.png) center center no-repeat;
     width: 24px;
 }
 
-#lightbox-buttons a.btnPrev:hover { background: url(skin-default/button_prev_hover.png) center center no-repeat }
+#lightbox-buttons a.btnPrev:hover { background: url(/assets/titan/skin-default/button_prev_hover.png) center center no-repeat }
 
 #lightbox-buttons a.btnNext {
-    background: url(skin-default/button_next.png) center center no-repeat;
+    background: url(/assets/titan/skin-default/button_next.png) center center no-repeat;
     width: 24px;
 }
 
-#lightbox-buttons a.btnNext:hover { background: url(skin-default/button_next_hover.png) center center no-repeat }
+#lightbox-buttons a.btnNext:hover { background: url(/assets/titan/skin-default/button_next_hover.png) center center no-repeat }
 
-#lightbox-buttons a.btnPlay { background: url(skin-default/button_play.png) center center no-repeat }
+#lightbox-buttons a.btnPlay { background: url(/assets/titan/skin-default/button_play.png) center center no-repeat }
 
-#lightbox-buttons a.btnPlay:hover { background: url(skin-default/button_play_hover.png) center center no-repeat }
+#lightbox-buttons a.btnPlay:hover { background: url(/assets/titan/skin-default/button_play_hover.png) center center no-repeat }
 
-#lightbox-buttons a.btnPlayOn { background: url(skin-default/button_pause.png) center center no-repeat }
+#lightbox-buttons a.btnPlayOn { background: url(/assets/titan/skin-default/button_pause.png) center center no-repeat }
 
-#lightbox-buttons a.btnPlayOn:hover { background: url(skin-default/button_pause_hover.png) center center no-repeat }
+#lightbox-buttons a.btnPlayOn:hover { background: url(/assets/titan/skin-default/button_pause_hover.png) center center no-repeat }
 
 @media (max-width: 767px) { 
     #lightbox-buttons {
