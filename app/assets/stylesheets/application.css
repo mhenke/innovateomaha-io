@@ -12,6 +12,6 @@
  *= require foundation.min
  *= require app
  *= require style1
- *= require color4
+ *= require color1
  *= require ./titan/jquery.titanlighbox
  */
