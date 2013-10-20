@@ -53,6 +53,11 @@ describe "Static Pages" do
 			visit '/static_pages/about' 
 			page.should have_selector('title', :text => "InnovateOmaha:: About")
 		end
+
+		it "breadcrumb should be current" do
+			visit '/static_pages/about' 
+			page.should have_xpath("//li[@class='current']//span[contains(.,'About')]")
+		end
 		
 	end
 
@@ -71,6 +76,11 @@ describe "Static Pages" do
 		it "nav section should be highlighted" do
 			visit '/static_pages/contact' 
 			page.find('#contact_nav')['active']
+		end
+
+		it "breadcrumb should be current" do
+			visit '/static_pages/contact' 
+			page.should have_xpath("//li[@class='current']//span[contains(.,'Contact')]")
 		end
 		
 	end
@@ -91,6 +101,11 @@ describe "Static Pages" do
 			visit '/static_pages/blog' 
 			page.find('#blog_nav')['active']
 		end
+
+		it "breadcrumb should be current" do
+			visit '/static_pages/blog' 
+			page.should have_xpath("//li[@class='current']//span[contains(.,'Blog')]")
+		end
 		
 	end
 
@@ -110,7 +125,11 @@ describe "Static Pages" do
 			visit '/static_pages/portfolio' 
 			page.find('#portfolio_nav')['active']
 		end
-		
+
+		it "breadcrumb should be current" do
+			visit '/static_pages/portfolio' 
+			page.should have_xpath("//li[@class='current']//span[contains(.,'Portfolio')]")
+		end
 	end
 
 	describe "Register Page" do
