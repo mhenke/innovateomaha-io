@@ -23,5 +23,4 @@
 //= require_tree ./jtweetsanywhere
 //= require_tree ./titan
 //= require app-head
-//= require_tree ./flexislider
 $(function(){ $(document).foundation(); });
