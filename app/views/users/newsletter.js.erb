@@ -1,1 +1,6 @@
-$( "#newsletter" ).html( "<h2>Thanks for signing up to our newsletter</h2><p>You will be keeping up-to-date with the latest news and updates now with our newsletter.</p>" ).next().remove();
+$("#newsletter").fadeToggle( 750, function() {
+    $("#newsletter").html( "<h2>Thanks for signing up to our newsletter</h2><p>You will be keeping up-to-date with the latest news and updates now with our newsletter.</p>" );
+  }).next().remove();
+$("#newsletter").fadeToggle( 2500, function() {
+    // Animation complete
+  });
