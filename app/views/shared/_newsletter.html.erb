@@ -10,16 +10,16 @@
 <!-- // // // // // // // // // // -->
 
 <div class="four columns">
-  <%= form_for @user, url: '/users/newsletter', remote: true do |f| %>  
+
+  <%= form_tag(:users_newsletter, method:'get', remote: true) do -%>
   <div class="row collapse newsletter-input">
     <div class="eight mobile-three columns">
-      <%= f.text_field :user, placeholder:'Enter your email address' %>
+      <%= text_field :users_newsletter, :title, :size => 20 %>
     </div>
     <div class="four mobile-one columns">
-      <%= f.submit "Subscribe", class:"button expand" %>
+      <%= submit_tag "Subscribe", class:"button expand" %>
     </div>
   </div>
-
 <% end %>
 </div>
 

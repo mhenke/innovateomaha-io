@@ -11,13 +11,6 @@ class UsersController < ApplicationController
 	end
 
 	def newsletter
-		@user = User.new(params[:user])  
-  
-	    respond_to do |format|  
-	        format.html { render :action => "new" }  
-	        format.js  
-	    end  
-	    
 	end  
 
 end
