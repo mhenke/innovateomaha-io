@@ -1,4 +1,7 @@
 Innovateomaha::Application.routes.draw do
+  
+
+
   get "static_pages/construction"
   get "static_pages/home"
   get "static_pages/about"
@@ -7,7 +10,8 @@ Innovateomaha::Application.routes.draw do
   get "static_pages/portfolio"
   get "static_pages/register"
   get "users/newsletter"
-
+  resources :users
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

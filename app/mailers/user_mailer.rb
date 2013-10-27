@@ -1,9 +1,9 @@
 class UserMailer < ActionMailer::Base
-  default from: "innovateomaha@gmail.com"
-
-  def signup_confirmation(user)
+  default from: 'innovateomaha@gmail.com'
+ 
+  def welcome_email(user)
     @user = user
-
-    mail to: user.email, subject: "Sign Up Confirmation", bcc: "henke.mike@gmail.com"
+    @url  = 'http://example.com/login'
+    mail(to: @user.email, subject: 'Welcome to My Awesome Site')
   end
 end
