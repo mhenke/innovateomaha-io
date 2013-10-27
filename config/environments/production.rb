@@ -61,7 +61,19 @@ Innovateomaha::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
+  config.action_mailer.delivery_method = :smtp
+
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+
+    config.action_mailer.smtp_settings = {
+    :address => 'smtp.sendgrid.net',
+    :port => 587,
+    :domain => ENV['SENDGRID_DOMAIN'],
+    :user_name => ENV['SENDGRID_USERNAME'],
+    :password => ENV['SENDGRID_PASSWORD'],
+    :authentication => 'plain',
+    :enable_starttls_auto => true
+  }
 end
