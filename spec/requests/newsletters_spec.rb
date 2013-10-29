@@ -5,6 +5,7 @@ describe "Newsletter Subscription", :js => true do
 		user = FactoryGirl.create(:user)
 		visit '/static_pages/construction'
 		fill_in "users_newsletter_title", :with => user.email
+		save_and_open_page
 		click_button "Subscribe"
     	page.should have_content('Thanks for signing up to our newsletter')
 	end
