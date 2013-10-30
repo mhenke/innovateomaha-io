@@ -23,15 +23,15 @@
           / Nav Section
           %ul#nav.right
             %li.has-dropdown
-              = link_to "Home", "home", id: 'home_nav', class: ( 'active' if yield(:title) == 'Home')
+              = link_to "Home", static_pages_home_path, id: 'home_nav', class: ( 'active' if yield(:title) == 'Home')
             %li.has-dropdown
-              = link_to "About", "about", id: 'about_nav', class: ( 'active' if yield(:title) == 'About')
+              = link_to "About", static_pages_about_path, id: 'about_nav', class: ( 'active' if yield(:title) == 'About')
             %li.has-dropdown
-              = link_to "Blog", "blog", id: 'blog_nav', class: ( 'active' if yield(:title) == 'Blog')
+              = link_to "Blog", static_pages_blog_path, id: 'blog_nav', class: ( 'active' if yield(:title) == 'Blog')
             %li.has-dropdown
-              = link_to "Portfolio", "portfolio", id: 'portfolio_nav', class: ( 'active' if yield(:title) == 'Portfolio')
+              = link_to "Portfolio", static_pages_portfolio_path, id: 'portfolio_nav', class: ( 'active' if yield(:title) == 'Portfolio')
             %li
-              = link_to "Contact", "contact", id: 'contact_nav', class: ( 'active' if yield(:title) == 'Contact')
+              = link_to "Contact", static_pages_contact_path, id: 'contact_nav', class: ( 'active' if yield(:title) == 'Contact')
         / End Nav Section
     / End Main Navigation
 / End Region 2 Wrap
