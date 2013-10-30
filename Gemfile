@@ -22,6 +22,7 @@ group :development, :test do
   gem 'debugger'
   gem 'irbtools', require: false
   gem 'launchy'
+  gem 'mailcatcher'
 end
 
 # Gems used only for assets and not required

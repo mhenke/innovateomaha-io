@@ -85,5 +85,7 @@ class UsersController < ApplicationController
   end
 
   def newsletter
+    @user = User.new(params[:users_newsletter])
+    UserMailer.welcome_email(@user).deliver
   end
 end

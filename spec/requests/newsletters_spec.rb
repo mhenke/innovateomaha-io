@@ -4,10 +4,13 @@ describe "Newsletter Subscription", :js => true do
 	it "should email user when requesting newsletter" do
 		user = FactoryGirl.create(:user)
 		visit '/static_pages/construction'
-		fill_in "users_newsletter_title", :with => user.email
-		save_and_open_page
+		fill_in "users_newsletter_email", :with => user.email
 		click_button "Subscribe"
     	page.should have_content('Thanks for signing up to our newsletter')
+    	last_email.to.should include(user.email)
 	end
-end
 
+	 it "renders the body" do
+      last_email.body.encoded.should match('You have successfully signed up to example.com')
+    end
+end

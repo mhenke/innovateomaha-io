@@ -4,7 +4,7 @@ require 'spork'
 #require 'spork/ext/ruby-debug'
 
 Spork.prefork do
-  
+
   # Loading more in this block will cause your tests to run faster. However,
   # if you change any configuration or code from libraries loaded here, you'll
   # need to restart spork for it take effect.
@@ -30,12 +30,14 @@ Spork.prefork do
 
     # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
     # config.fixture_path = "#{::Rails.root}/spec/fixtures"
-    config.include FactoryGirl::Syntax::Methods
-    
+        
     # If you're not using ActiveRecord, or you'd prefer not to run each of your
     # examples within a transaction, remove the following line or assign false
     # instead of true.
     config.use_transactional_fixtures = true
+
+    config.include(MailerMacros)
+    config.before(:each) { reset_email }
 
     # If true, the base class of anonymous controllers will be inferred
     # automatically. This will be the default behavior in future versions of
@@ -59,6 +61,8 @@ Spork.prefork do
     config.after(:each) do
       DatabaseCleaner.clean
     end
+
+    config.include FactoryGirl::Syntax::Methods
   end
 
 end

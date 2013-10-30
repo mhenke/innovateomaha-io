@@ -34,4 +34,10 @@ Innovateomaha::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+
+  # Don't care if the mailer can't send
+  config.action_mailer.raise_delivery_errors = true
+
+  config.action_mailer.smtp_settings = { address: 'localhost',
+                                         port: 1025 }
 end
