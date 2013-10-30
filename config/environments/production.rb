@@ -47,6 +47,8 @@ Innovateomaha::Application.configure do
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   # config.assets.precompile += %w( search.js )
+  # config.assets.precompile += %w( jquery.dataTables.min.js jquery-ui-1.8.21.custom.min.js jquery-ui-1.8.21.custom.css bootstrap-datepicker.js fullcalendar.js)
+  config.assets.precompile += %w( jquery.countdown.js )
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
