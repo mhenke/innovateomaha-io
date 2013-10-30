@@ -1,0 +1,66 @@
+- provide(:title, 'Contact')
+/ GOOGLE Maps
+%script{:src => "https://maps.googleapis.com/maps/api/js?sensor=false&amp;language=en"}
+:javascript
+  // GOOGLE MAPS
+      function initialize() {
+
+      var mapOptions = {
+        zoom: 14,
+        center: new google.maps.LatLng(37.771008, -122.41175),
+        mapTypeControl: true,
+        mapTypeControlOptions: {
+            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+          },
+        zoomControl: true,
+        zoomControlOptions: {
+            style: google.maps.ZoomControlStyle.SMALL
+          },
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+      var map = new google.maps.Map(document.getElementById("map_canvas"),
+        mapOptions);
+      }
+.row.maincontent.contact
+  .twelve.columns
+    .page_title
+      .row
+        .twelve.columns
+          %h1 We love to stay in touch
+  .twelve.columns
+    .map_location
+      #map_canvas
+  .four.columns
+    %h3 Head Office
+    %p Use the map above to get more information about our main office.
+    .contact-details
+      %p
+        %span Address:
+        008 Quickers Street, Cupertino, CA, 12345
+      %p
+        %span Phone:
+        (123) 456-7890
+      %p
+        %span Fax:
+        (123) 456-7890
+      %p
+        %span E-mail:
+        office@touchm.com
+  .eight.columns
+    %h3 Send us a message
+    %form
+      .row
+        .four.columns
+          %label Name
+          %input{:type => "text"}/
+        .four.columns
+          %label E-mail
+          %input{:type => "text"}/
+        .four.columns
+          %label Subject
+          %input{:type => "text"}/
+      .row
+        .twelve.columns
+          %label Message
+          %textarea
+      %a.medium.button{:href => "#"} Submit

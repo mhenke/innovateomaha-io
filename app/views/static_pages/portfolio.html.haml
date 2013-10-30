@@ -1,0 +1,36 @@
+- provide(:title, 'Portfolio')
+.row.maincontent
+  .twelve.columns
+    .page_title
+      .row
+        .twelve.columns
+          %h1 Run Lola, Run!
+  .twelve.columns
+    .row
+      .four.columns
+        %h4 Overview
+        %p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo, nemo enim ipsam voluptatem quia voluptas sit asperna.Saque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo, nemo enim ipsam voluptatem quia voluptas sit asperna.
+        %a.button{:href => "#"} Launch Project
+        %h4.top20 Technology Used
+        %ul.disc
+          %li HTML5 / CSS3
+          %li Photoshop
+          %li Illustrator
+          %li PHP / Jquery
+        .project-pagination
+          %a.has-tipsy.left_pagination{:href => "#", :title => "Previous Project"}
+          %a.has-tipsy.all_pagination{:href => "#", :title => "View All Projects"}
+          %a.has-tipsy.right_pagination{:href => "#", :title => "Next Project"}
+      .eight.columns
+        %section.slider
+          .gallery-slider.flexslider
+            %ul.slides
+              %li{"data-thumb" => "/assets/works/project/1.jpg"}
+                = image_tag("works/project/1.jpg")
+              %li{"data-thumb" => "/assets/works/project/2.jpg"}
+                = image_tag("works/project/2.jpg")
+              %li{"data-thumb" => "/assets/works/project/3.jpg"}
+                = image_tag("works/project/3.jpg")
+              %li{"data-thumb" => "/assets/works/project/4.jpg"}
+                = image_tag("works/project/4.jpg")
+= javascript_include_tag "flexislider/jquery.flexslider"

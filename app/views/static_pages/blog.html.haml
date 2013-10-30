@@ -1,0 +1,267 @@
+- provide(:title, 'Blog')
+.row.maincontent
+  .twelve.columns
+    .page_title
+      .row
+        .twelve.columns
+          %h1 Welcome to our blog
+  / Blog Content
+  .eight.columns
+    / Begin Article
+    .row
+      .twelve.columns
+        %h2.article_title
+          %a{:href => "blog_inner.html"} Using slider as a media blog content
+        .article_meta
+          %ul.link-list
+            %li.post-date
+              %span.icon-calendar
+              %a{:href => "blog-inner.html"} Octomber 4, 2012
+            %li.post-author
+              %span.icon-user
+              %a{:href => "blog-inner.html"} Lance Dorgan
+            %li.post-categories
+              %span.icon-tags
+              %a{:href => "blog-inner.html"} Illustrations
+            %li.post-comments
+              %span.icon-comments
+              %a{:href => "blog-inner.html"} 24 comments
+      .twelve.columns
+        .article_media
+          .simple-slider.flexslider
+            %ul.slides
+              %li.image-overlay{"data-thumb" => "/assets/works/blog/2.jpg"}
+                %a.titan-lb{"data-titan-group" => "gallery", :href => "/assets/works/blog/2.jpg", :title => "Skyde - Travel far away to a old pirate space station."}
+                  = image_tag("works/blog/2.jpg")
+                  %span.overlay-icon.item-zoom
+              %li.image-overlay{"data-thumb" => "/assets/works/blog/3.jpg"}
+                %a.titan-lb{"data-titan-group" => "gallery", :href => "/assets/works/blog/3.jpg", :title => "Skyde - Travel far away to a old pirate space station."}
+                  = image_tag("works/blog/3.jpg")
+                  %span.overlay-icon.item-movie
+              %li.image-overlay{"data-thumb" => "/assets/works/blog/4.jpg"}
+                %a.titan-lb{"data-titan-group" => "gallery", :href => "/assets/works/blog/4.jpg", :title => "Skyde - Travel far away to a old pirate space station."}
+                  = image_tag("works/blog/4.jpg")
+                  %span.overlay-icon.item-image
+      .twelve.columns
+        .article_content
+          %p Curabitur risus est, aliquam at vehicula hendrerit, lacinia sit amet diam. Nulla tristique arcu et nulla ullamcorper sit amet varius odio condimentum. Ut semper porttitor ipsum, et cursus erat volutpat vitae. Pellentesque odio massa, egestas non euismod eget, ultrices ac orci. Donec purus augue, tempus a iaculis quis, pretium volutpat ipsum. Donec vitae rhoncus turpis.
+          %a.button.small.icon-chevron-right{:href => "blog_inner.html"} Continue reading
+    / End  Article
+    %hr.article_hr/
+    / Begin Article
+    .row
+      .twelve.columns
+        %h2.article_title
+          %a{:href => "blog_inner.html"} Video used as media for blog article
+        .article_meta
+          %ul.link-list
+            %li.post-date
+              %span.icon-calendar
+              %a{:href => "blog-inner.html"} November 18, 2012
+            %li.post-author
+              %span.icon-user
+              %a{:href => "blog-inner.html"} Lance Dorgan
+            %li.post-categories
+              %span.icon-tags
+              = succeed "," do
+                %a{:href => "blog-inner.html"} 3D Design
+              %a{:href => "blog-inner.html"} Illustrations
+            %li.post-comments
+              %span.icon-comments
+              %a{:href => "blog-inner.html"} 24 comments
+      .twelve.columns
+        .article_media
+          .flex-video.widescreen.vimeo
+            %iframe{:allowfullscreen => "", :frameborder => "0", :height => "281", :mozallowfullscreen => "", :src => "http://player.vimeo.com/video/1084537?badge=0", :webkitallowfullscreen => "", :width => "500"}
+            %p
+              %a{:href => "http://vimeo.com/1084537"} Big Buck Bunny
+              from
+              %a{:href => "http://vimeo.com/user508904"} Blender Foundation
+              on
+              = succeed "." do
+                %a{:href => "http://vimeo.com"} Vimeo
+      .twelve.columns
+        .article_content
+          %p Curabitur risus est, aliquam at vehicula hendrerit, lacinia sit amet diam. Nulla tristique arcu et nulla ullamcorper sit amet varius odio condimentum. Ut semper porttitor ipsum, et cursus erat volutpat vitae. Pellentesque odio massa, egestas non euismod eget, ultrices ac orci. Donec purus augue, tempus a iaculis quis, pretium volutpat ipsum. Donec vitae rhoncus turpis.
+          %a.button.small.icon-chevron-right{:href => "blog_inner.html"} Continue reading
+    / End  Article
+    %hr.article_hr/
+    / Begin Article
+    .row
+      .twelve.columns
+        %h2.article_title
+          %a{:href => "blog_inner.html"} Simple Images used on media block
+        .article_meta
+          %ul.link-list
+            %li.post-date
+              %span.icon-calendar
+              %a{:href => "blog-inner.html"} November 9, 2012
+            %li.post-author
+              %span.icon-user
+              %a{:href => "blog-inner.html"} Lance Dorgan
+            %li.post-categories
+              %span.icon-tags
+              = succeed "," do
+                %a{:href => "blog-inner.html"} Web Design
+              %a{:href => "blog-inner.html"} HTML5 / CSS3
+            %li.post-comments
+              %span.icon-comments
+              %a{:href => "blog-inner.html"} 24 comments
+      .twelve.columns
+        .article_media
+          = image_tag("works/blog/3.jpg", :size => "938x500", :alt => "Simple Image Media Blog")
+      .twelve.columns
+        .article_content
+          %p Curabitur risus est, aliquam at vehicula hendrerit, lacinia sit amet diam. Nulla tristique arcu et nulla ullamcorper sit amet varius odio condimentum. Ut semper porttitor ipsum, et cursus erat volutpat vitae. Pellentesque odio massa, egestas non euismod eget, ultrices ac orci. Donec purus augue, tempus a iaculis quis, pretium volutpat ipsum. Donec vitae rhoncus turpis.
+          %a.button.small.icon-chevron-right{:href => "blog_inner.html"} Continue reading
+    / End  Article
+    %hr.article_hr/
+    / Pagination
+    .row
+      .twelve.columns
+        %ul.pagination
+          %li.arrow.unavailable
+            %a{:href => ""}
+              %span.icon-chevron-left
+          %li.current
+            %a{:href => ""} 1
+          %li
+            %a{:href => ""} 2
+          %li
+            %a{:href => ""} 3
+          %li
+            %a{:href => ""} 4
+          %li.unavailable
+            %a{:href => ""} &hellip;
+          %li
+            %a{:href => ""} 12
+          %li
+            %a{:href => ""} 13
+          %li.arrow
+            %a{:href => ""}
+              %span.icon-chevron-right
+    / End Pagination
+  / End Blog Content
+  / Sidebar Left
+  .four.columns.sidebar-right
+    / Sidebar Widget
+    .sidebar-widget
+      %h3 Popular Articles
+      %ul.sidebar-list
+        %li
+          %a{:href => "#"}
+            %span.date>
+              %i.icon-calendar>
+              June 29, 2012
+            Erat nisl faucibus justo verit et quasi architecto beatae.
+        %li
+          %a{:href => "#"}
+            %span.date>
+              %i.icon-calendar>
+              June 29, 2012
+            Ut semper porttitor ipsum, et cursus erat volutpat vitae.
+        %li
+          %a{:href => "#"}
+            %span.date>
+              %i.icon-calendar>
+              June 29, 2012
+            Mauris porttitor nisi sit amet felis porta congue.
+        %li
+          %a{:href => "#"}
+            %span.date>
+              %i.icon-calendar>
+              June 29, 2012
+            Quisque ac felis felis, ornare sem. Proin ut nisi tortor.
+        %li
+          %a{:href => "#"}
+            %span.date>
+              %i.icon-calendar>
+              June 29, 2012
+            Erat nisl faucibus justo verit et quasi architecto beatae.
+    / End Sidebar Widget
+    / Sidebar Widget
+    .sidebar-widget
+      %h3 Text Widget
+      %p Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      %a.button.expand{:href => "#"}
+        %i.icon-question-sign>
+        Need More Info?
+    / End Sidebar Widget
+    / Sidebar Widget
+    .sidebar-widget
+      %h3 Blog Archives
+      %ul.toggle-view
+        %li
+          %h2 November 2012
+          %span
+            %i.icon-plus
+          .toggle-content
+            %ul.disc
+              %li
+                %a{:href => "index.html"} Illustration A to Z
+              %li
+                %a{:href => "#"} Web Design technics
+              %li
+                %a{:href => "#"} 3D Design
+              %li
+                %a{:href => "#"} HTML5 / CSS3
+              %li
+                %a{:href => "#"} UI design
+              %li
+                %a{:href => "#"} Uncategorized
+        %li
+          %h2 Octomber 2012
+          %span
+            %i.icon-plus
+          .toggle-content
+            %ul.disc
+              %li
+                %a{:href => "#"} Illustration A to Z
+              %li
+                %a{:href => "#"} Web Design technics
+              %li
+                %a{:href => "#"} 3D Design
+              %li
+                %a{:href => "#"} HTML5 / CSS3
+              %li
+                %a{:href => "#"} UI design
+              %li
+                %a{:href => "#"} Uncategorized
+        %li
+          %h2 September 2012
+          %span
+            %i.icon-plus
+          .toggle-content
+            %ul.disc
+              %li
+                %a{:href => "#"} Illustration A to Z
+              %li
+                %a{:href => "#"} Web Design technics
+              %li
+                %a{:href => "#"} 3D Design
+              %li
+                %a{:href => "#"} HTML5 / CSS3
+              %li
+                %a{:href => "#"} UI design
+              %li
+                %a{:href => "#"} Uncategorized
+        %li
+          %h2 August 2012
+          %span
+            %i.icon-plus
+          .toggle-content
+            %ul.disc
+              %li
+                %a{:href => "#"} Illustration A to Z
+              %li
+                %a{:href => "#"} Web Design technics
+              %li
+                %a{:href => "#"} 3D Design
+              %li
+                %a{:href => "#"} HTML5 / CSS3
+              %li
+                %a{:href => "#"} UI design
+              %li
+                %a{:href => "#"} Uncategorized
+    / End Sidebar Widget
+  / End Sidebar Left

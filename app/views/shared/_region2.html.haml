@@ -1,0 +1,38 @@
+/ Region 2 Wrap
+.container.region2wrap
+  .row
+    / Logo
+    .three.columns
+      %a#logo{:href => "index.html"}/
+      %h1
+        Innovate
+        %span Omaha
+    / End Logo
+    - if !defined? @construction_page
+      / Main Navigation
+      .nine.columns
+        %nav.top-bar
+          %ul
+            / Toggle Button Mobile
+            %li.name
+              %h1
+                %a{:href => "#"} Please select your page
+            %li.toggle-topbar
+              %a{:href => "#"}
+            / End Toggle Button Mobile
+          %section
+            / Nav Section
+            %ul#nav.right
+              %li.has-dropdown
+                = link_to "Home", "home", id: 'home_nav', class: ( 'active' if yield(:title) == 'Home')
+              %li.has-dropdown
+                = link_to "About", "about", id: 'about_nav', class: ( 'active' if yield(:title) == 'About')
+              %li.has-dropdown
+                = link_to "Blog", "blog", id: 'blog_nav', class: ( 'active' if yield(:title) == 'Blog')
+              %li.has-dropdown
+                = link_to "Portfolio", "portfolio", id: 'portfolio_nav', class: ( 'active' if yield(:title) == 'Portfolio')
+              %li
+                = link_to "Contact", "contact", id: 'contact_nav', class: ( 'active' if yield(:title) == 'Contact')
+          / End Nav Section
+      / End Main Navigation
+/ End Region 2 Wrap

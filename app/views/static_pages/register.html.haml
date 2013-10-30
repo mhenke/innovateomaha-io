@@ -1,0 +1,85 @@
+- provide(:title, 'Register')
+.row.maincontent.contact
+  .twelve.columns
+    .page_title
+      .row
+        .twelve.columns
+          %h1 Register with Us
+  .four.columns
+    %h3 Contact Us
+    %p If you have any problem with our registration process please contact us.
+    .contact-details
+      %p
+        %span Address:
+        008 Quickers Street, Cupertino, CA, 12345
+      %p
+        %span Phone:
+        (123) 456-7890
+      %p
+        %span Fax:
+        (123) 456-7890
+      %p
+        %span E-mail:
+        office@touchm.com
+  .eight.columns
+    %form.custom
+      %fieldset
+        %legend Register
+        .row
+          .twelve.columns
+            .row
+              .six.columns
+                %label Username
+                %input{:type => "text"}/
+              .six.columns
+                %label Password
+                %input{:type => "text"}/
+            .row
+              .six.columns
+                %label E-mail
+                %input{:type => "text"}/
+              .six.columns
+                %label Confirm E-mail
+                %input{:type => "text"}/
+            .row
+              .six.columns
+                %label Twitter
+                .row.collapse
+                  .two.mobile-one.columns
+                    %span.prefix @
+                  .ten.mobile-three.columns
+                    %input{:placeholder => "foundationzurb", :type => "text"}/
+              .six.columns
+                %label URL
+                .row.collapse
+                  .nine.mobile-three.columns
+                    %input{:placeholder => "foundation.zurb", :type => "text"}/
+                  .three.mobile-one.columns
+                    %span.postfix .com
+        %label Address
+        %input{:placeholder => "Street (e.g. 123 Awesome St.)", :type => "text"}/
+        .row
+          .six.columns
+            %input{:placeholder => "City", :type => "text"}/
+          .six.columns
+            %input{:placeholder => "ZIP", :type => "text"}/
+        .row
+          .four.columns.bottom20
+            %label Language
+            .custom.dropdown
+              %a.current{:href => "#"}
+                This is a dropdown
+              %a.selector{:href => "#"}
+              %ul
+                %li This is a dropdown
+                %li This is another option
+                %li Look, a third option
+        %label{:for => "radio1"}
+          %input#radio1{:name => "radio1", :style => "display:none;", :type => "radio"}/
+          %span.custom.radio
+          I agree to these terms
+        %label{:for => "radio2"}
+          %input#radio2{:name => "radio1", :style => "display:none;", :type => "radio"}/
+          %span.custom.radio.checked
+          I do not agree to these terms
+        %a.medium.button.top20.bottom20{:href => "#"} Submit

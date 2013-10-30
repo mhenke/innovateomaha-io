@@ -1,0 +1,16 @@
+/ Region 3 Wrap
+.container.region3wrap
+  / Content Top
+  .row.content_top
+    - if defined? @construction_page
+      .eight.columns.centered
+        %h1.construction_title Our Website is Under Construction
+    - else
+      .nine.columns
+        = render :partial => 'shared/breadcrumbs'
+      .three.columns
+        .row
+          .twelve.columns
+            = render :partial => 'shared/search'
+  / End Content Top
+/ End Region 3 Wrap

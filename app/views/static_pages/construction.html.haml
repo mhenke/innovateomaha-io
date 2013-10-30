@@ -1,0 +1,57 @@
+- provide(:title, 'Construction')
+.row.maincontent
+  .twelve.columns.construction
+    .row
+      .eight.columns.centered
+        %h4.construction_description.text-center Thanks for stopping by. We are working hard on creating a new site featuring an extended portfolio, list of services, design templates and more. Keep up to date by joining my mailing list or follow us on our social networking sites.
+        .nice.primary.progress
+          %h4.text-center
+            %span.icon-cogs.icon30 35%
+          %span.meter.progress10
+    #clock
+      .row
+        .one.columns
+        .two.mobile-two.columns
+          %p
+            %span#weeks
+            Weeks
+        .two.mobile-two.columns
+          %p
+            %span#daysLeft
+            Days
+        .two.mobile-two.columns
+          %p
+            %span#hours
+            Hours
+        .two.mobile-two.columns
+          %p
+            %span#minutes
+            Minutes
+        .two.mobile-four.columns
+          %p
+            %span#seconds
+            Seconds
+        .one.columns
+/ Countdown
+= javascript_include_tag "jquery.countdown"
+:javascript
+  $( document ).ready(function() {
+      $(function() {
+          $('div#clock').countdown("2013/10/27", function(event) {
+              var $this = $(this);
+              switch(event.type) {
+                  case "seconds":
+                  case "minutes":
+                  case "hours":
+                  case "days":
+                  case "weeks":
+                  case "daysLeft":
+                      $this.find('span#'+event.type).html(event.value);
+                      break;
+                  case "finished":
+                      $this.hide();
+                      break;
+              }
+          });
+      });
+  });
