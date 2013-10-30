@@ -8,9 +8,6 @@ describe "Newsletter Subscription", :js => true do
 		click_button "Subscribe"
     	page.should have_content('Thanks for signing up to our newsletter')
     	last_email.to.should include(user.email)
+    	last_email.body.encoded.should match('You have successfully signed up to example.com')
 	end
-
-	 it "renders the body" do
-      last_email.body.encoded.should match('You have successfully signed up to example.com')
-    end
 end
