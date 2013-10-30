@@ -64,6 +64,9 @@
     - if defined? @home_page
       .twelve.columns
         %h2 We create custom-built, marketing-driven website solutions and online environments that ensure your brand delivers on form and functionality.
+    - elsif defined? @construction_page
+      .eight.columns.centered
+        %h1.construction_title Our Website is Under Construction
     - else
       .nine.columns
         = render :partial => 'shared/breadcrumbs'
