@@ -8,6 +8,7 @@ gem 'will_paginate', '3.0.3'
 gem 'jquery-rails', '2.0.2'
 gem 'crummy', '~> 1.8.0'
 gem 'mail'
+gem 'haml' 
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
@@ -23,6 +24,8 @@ group :development, :test do
   gem 'irbtools', require: false
   gem 'launchy'
   gem 'mailcatcher'
+  gem 'haml-rails'
+  gem 'erb2haml'
 end
 
 # Gems used only for assets and not required
