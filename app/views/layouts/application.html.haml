@@ -24,10 +24,7 @@
   %body{:onload => "initialize()"}
     = render :partial => 'shared/region1'
     = render :partial => 'shared/region2'
-    - if defined? @home_page
-      = render :partial => 'shared/region3home'
-    - else
-      = render :partial => 'shared/region3'
+    = render :partial => 'shared/region3'
     / maincontent
     = render :partial => 'shared/region4'
     / End maincontent
