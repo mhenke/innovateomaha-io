@@ -48,7 +48,11 @@
         office@touchm.com
   .eight.columns
     %h3 Send us a message
-    = form_for :static_pages_email, url: static_pages_email_path , method:'get', remote: true do |f|
+    = form_for :static_pages_email, url: static_pages_email_path , method:'get' do |f|
+      - if @contact.errors.any?
+        %ul
+          - @contact.errors.full_messages.each do |msg|
+            %li= msg
       .row
         .four.columns
           = f.label :name
