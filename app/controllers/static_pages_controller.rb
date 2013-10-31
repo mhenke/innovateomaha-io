@@ -11,6 +11,17 @@ class StaticPagesController < ApplicationController
   end
   def contact
     add_crumb 'Contact'
+     @contact = Contact.new()
+  end
+  def email
+   
+    @contact = Contact.new(params[:static_pages_email])
+    UserMailer.contact_email(@contact).deliver
+    if @contact.deliver
+      render :email
+    else
+      render :contact
+    end
   end
   def blog
     add_crumb 'Blog'

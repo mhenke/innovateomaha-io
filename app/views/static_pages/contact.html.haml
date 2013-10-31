@@ -48,19 +48,20 @@
         office@touchm.com
   .eight.columns
     %h3 Send us a message
-    %form
+    = form_for :static_pages_email, url: static_pages_email_path , method:'get', remote: true do |f|
       .row
         .four.columns
-          %label Name
-          %input{:type => "text"}/
+          = f.label :name
+          = f.text_field :name
         .four.columns
-          %label E-mail
-          %input{:type => "text"}/
+          = f.label :email
+          = f.text_field :email
         .four.columns
-          %label Subject
-          %input{:type => "text"}/
+          = f.label :subject
+          = f.text_field :subject
       .row
         .twelve.columns
-          %label Message
-          %textarea
-      %a.medium.button{:href => "#"} Submit
+          = f.label :message
+          = f.text_area :message
+      / %a.medium.button{:href => "#"} Submit
+      = f.submit "Submit", class:"button expand"
