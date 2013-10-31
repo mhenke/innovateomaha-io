@@ -9,6 +9,7 @@ gem 'jquery-rails', '2.0.2'
 gem 'crummy', '~> 1.8.0'
 gem 'mail'
 gem 'haml' 
+gem 'simple_form'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
