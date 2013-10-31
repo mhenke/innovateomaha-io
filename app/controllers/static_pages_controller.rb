@@ -14,10 +14,8 @@ class StaticPagesController < ApplicationController
      @contact = Contact.new()
   end
   def email
-   
     @contact = Contact.new(params[:static_pages_email])
-    UserMailer.contact_email(@contact).deliver
-    if @contact.deliver
+    if @contact.valid? && @contact.deliver
       render :email
     else
       render :contact
