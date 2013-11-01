@@ -10,6 +10,7 @@ gem 'crummy', '~> 1.8.0'
 gem 'mail'
 gem 'haml' 
 gem 'simple_form'
+gem 'active_attr'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'

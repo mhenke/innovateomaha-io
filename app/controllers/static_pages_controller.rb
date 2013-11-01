@@ -15,9 +15,9 @@ class StaticPagesController < ApplicationController
   end
   def email
     add_crumb 'Contact'
-    
+
     @contact = Contact.new(params[:static_pages_email])
-    if @contact.valid? && @contact.deliver
+    if @contact.valid?
       render :email
     else
       render :contact

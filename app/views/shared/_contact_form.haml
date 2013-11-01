@@ -1,21 +1,17 @@
-= form_for :static_pages_email, url: static_pages_email_path , method:'get' do |f|
-  - if @contact.errors.any?
-    %ul
-      - @contact.errors.full_messages.each do |msg|
-        %li= msg
-  .row
-    .four.columns
-      = f.label :name
-      = f.text_field :name
-    .four.columns
-      = f.label :email
-      = f.text_field :email
-    .four.columns
-      = f.label :subject
-      = f.text_field :subject
+= simple_form_for @contact, url: static_pages_email_path , method:'get' do |f|
   .row
     .twelve.columns
-      = f.label :message
-      = f.text_area :message
+      = f.error_notification
+  .row
+    .four.columns
+      = f.input :name
+    .four.columns
+      = f.input :email, as: :email
+    .four.columns
+      = f.input :subject
+  .row
+    .twelve.columns
+      = f.error :base
+      = f.input :message, as: :text
   / %a.medium.button{:href => "#"} Submit
-  = f.submit "Submit", class:"medium button"
+  = f.button :submit, "Submit", class:"medium button"
