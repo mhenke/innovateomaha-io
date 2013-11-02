@@ -1,14 +1,13 @@
 / // // // // // // // // // //
-- @user = "User"
 #newsletter.eight.columns
   %h2 Sign up for our newsletter
   %p Keep up-to-date with the latest news and updates by subscribing to our newsletter.
 / // // // // // // // // // //
 .four.columns
-  = form_tag(:users_newsletter, method:'get', remote: true) do
+  = simple_form_for @newsletter, url: users_newsletter_path , method:'get', remote: true do |f|
     .row.collapse.newsletter-input
       .eight.mobile-three.columns
-        = text_field :users_newsletter, :email, :size => 20
+        %p= f.input_field :email, label: false
       .four.mobile-one.columns
-        = submit_tag "Subscribe", class:"button expand"
+        = f.button :submit, 'Subscribe', class:'expand', name:'commit'
 / // // // // // // // // // //

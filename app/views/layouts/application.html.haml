@@ -21,7 +21,7 @@
     /[if lt IE 9]
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     = csrf_meta_tags
-  %body{:onload => "initialize()"}
+  %body
     = render :partial => 'shared/region1'
     = render :partial => 'shared/region2'
     = render :partial => 'shared/region3'

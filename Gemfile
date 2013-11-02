@@ -28,6 +28,7 @@ group :development, :test do
   gem 'mailcatcher'
   gem 'haml-rails'
   gem 'erb2haml'
+  gem 'poltergeist'
 end
 
 # Gems used only for assets and not required

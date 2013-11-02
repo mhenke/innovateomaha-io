@@ -38,7 +38,6 @@ describe "Static Pages" do
 
 	describe "About Page" do
 
-
 		it "should have the content 'Who we are - take a look'" do
 			visit '/static_pages/about' 
 			page.should have_content('Who we are - take a look')
@@ -62,8 +61,8 @@ describe "Static Pages" do
 	end
 
 	describe "Contact Page" do
-		
-		it "should have the content 'We love to stay in touch'" do
+	
+			it "should have the content 'We love to stay in touch'" do
 			visit '/static_pages/contact' 
 			page.should have_content('We love to stay in touch')
 		end

@@ -1,5 +1,7 @@
 class StaticPagesController < ApplicationController
 
+  before_filter :create_newsletter
+ 
   def construction
     @construction_page = true
   end
@@ -31,4 +33,10 @@ class StaticPagesController < ApplicationController
   end
   def register
   end
+
+    private
+ 
+    def create_newsletter
+     @newsletter = Newsletter.new()
+    end
 end

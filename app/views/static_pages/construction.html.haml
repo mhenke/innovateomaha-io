@@ -32,26 +32,3 @@
             %span#seconds
             Seconds
         .one.columns
-/ Countdown
-= javascript_include_tag "jquery.countdown"
-:javascript
-  $( document ).ready(function() {
-      $(function() {
-          $('div#clock').countdown("2013/10/27", function(event) {
-              var $this = $(this);
-              switch(event.type) {
-                  case "seconds":
-                  case "minutes":
-                  case "hours":
-                  case "days":
-                  case "weeks":
-                  case "daysLeft":
-                      $this.find('span#'+event.type).html(event.value);
-                      break;
-                  case "finished":
-                      $this.hide();
-                      break;
-              }
-          });
-      });
-  });

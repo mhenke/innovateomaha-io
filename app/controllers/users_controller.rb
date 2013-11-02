@@ -85,7 +85,13 @@ class UsersController < ApplicationController
   end
 
   def newsletter
-    @user = User.new(params[:users_newsletter])
-    UserMailer.welcome_email(@user).deliver
+    @newsletter = Newsletter.new(params[:newsletter])
+     if @newsletter.valid?
+      UserMailer.welcome_email(@newsletter).deliver
+      render :newsletter
+    else
+      render :newsletter_fail
+    end
+    
   end
 end
