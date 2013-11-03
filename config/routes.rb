@@ -9,6 +9,7 @@ Innovateomaha::Application.routes.draw do
   get "static_pages/portfolio"
   get "static_pages/register"
   get "users/newsletter"
+
   resources :users
   
   # The priority is based upon order of creation:
@@ -21,6 +22,8 @@ Innovateomaha::Application.routes.draw do
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
+
+  match '(errors)/:status', to: 'errors#show', constraints: {status: /\d{3}/}
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
@@ -67,6 +70,4 @@ Innovateomaha::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
-
-  match '(errors)/:status', to: 'errors#show', constraints: {status: /\d{3}/}
 end
