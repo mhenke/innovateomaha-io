@@ -1,5 +1,3 @@
-# app/models/inquiry.rb
- 
 class Contact 
   include ActiveAttr::Model
 
@@ -12,6 +10,12 @@ class Contact
             :presence => true
 
   validates :subject, 
+            :presence => true
+
+  validates :email, 
+            :presence => true
+
+  validates :message, 
             :presence => true
   
   validates :email,

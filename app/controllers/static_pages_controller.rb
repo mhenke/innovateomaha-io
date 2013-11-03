@@ -1,7 +1,5 @@
 class StaticPagesController < ApplicationController
 
-  before_filter :create_newsletter
- 
   def construction
     @construction_page = true
   end
@@ -19,7 +17,9 @@ class StaticPagesController < ApplicationController
     add_crumb 'Contact'
 
     @contact = Contact.new(params[:contact])
-    if @contact.valid?
+    @mail = UserMailer.contact_email(@contact)
+
+    if @contact.valid? && @mail.deliver
       render :email
     else
       render :contact
@@ -34,9 +34,4 @@ class StaticPagesController < ApplicationController
   def register
   end
 
-    private
- 
-    def create_newsletter
-     @newsletter = Newsletter.new()
-    end
 end

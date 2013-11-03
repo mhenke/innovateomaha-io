@@ -1,25 +1,361 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>We're sorry, but something went wrong (500)</title>
-  <style type="text/css">
-    body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
-    div.dialog {
-      width: 25em;
-      padding: 0 4em;
-      margin: 4em auto 0 auto;
-      border: 1px solid #ccc;
-      border-right-color: #999;
-      border-bottom-color: #999;
-    }
-    h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
-  </style>
-</head>
-
-<body>
-  <!-- This file lives in public/500.html -->
-  <div class="dialog">
-    <h1>We're sorry, but something went wrong.</h1>
-  </div>
-</body>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]> <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]> ><! <![endif]-->
+<html lang='en'>
+  <!-- <![endif] -->
+  <head>
+    <meta charset='utf-8'>
+    <!-- Uncomment to make IE8 render like IE7 -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+    <!-- Set the viewport width to device width for mobile -->
+    <meta content='width=device-width minimum-scale=1, maximum-scale=1' id='view' name='viewport'>
+    <title>InnovateOmaha:: 500</title>
+    <link href="/assets/application.css?body=1" media="all" rel="stylesheet" type="text/css" />
+    <link href="/assets/foundation.min.css?body=1" media="all" rel="stylesheet" type="text/css" />
+    <link href="/assets/app.css?body=1" media="all" rel="stylesheet" type="text/css" />
+    <link href="/assets/style1.css?body=1" media="all" rel="stylesheet" type="text/css" />
+    <link href="/assets/color1.css?body=1" media="all" rel="stylesheet" type="text/css" />
+    <link href="/assets/titan/jquery.titanlighbox.css?body=1" media="all" rel="stylesheet" type="text/css" />
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&amp;amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta content="authenticity_token" name="csrf-param" />
+    <meta content="CWSDwPNopKPGaY7JfflUNB7DQjuyx7GVzt5KbRNEogo=" name="csrf-token" />
+  </head>
+  <body>
+    <!-- Region 1 Wrap -->
+    <div class='container region1wrap'>
+      <!-- Top Header -->
+      <div class='row top_header'>
+        <div class='six columns'>
+          <ul class='link-list'>
+            <li>
+              <a href='#'>Order Now</a>
+            </li>
+            <li>
+              <a href='#'>Pricing</a>
+            </li>
+            <li>
+              <a href='#'>Site Map</a>
+            </li>
+          </ul>
+          <div class='login user-control'>
+            Hello,
+            <a href='#'>
+              John Smith
+              <span class='notification'>4</span>
+            </a>
+          </div>
+        </div>
+        <div class='six columns'>
+          <ul class='top_social'>
+            <li>
+              <a class='has-tipsy' href='http://twitter.com/' title='Twitter'><img alt="Twitter" src="/assets/social/Twitter.png" /></a>
+            </li>
+            <li>
+              <a class='has-tipsy' href='http://www.facebook.com/' title='Facebook'><img alt="Facebook" src="/assets/social/Facebook.png" /></a>
+            </li>
+            <li>
+              <a class='has-tipsy' href='http://google.com/' title='Google'><img alt="Google" src="/assets/social/Google.png" /></a>
+            </li>
+            <li>
+              <a class='has-tipsy' href='http://www.LinkedIn.com/' title='LinkedIn'><img alt="Linkedin" src="/assets/social/LinkedIn.png" /></a>
+            </li>
+            <li>
+              <a class='has-tipsy' href='http://www.Flickr.com/' title='Flickr'><img alt="Flickr" src="/assets/social/Flickr.png" /></a>
+            </li>
+            <li>
+              <a class='has-tipsy' href='http://vimeo.com/' title='Vimeo'><img alt="Vimeo" src="/assets/social/Vimeo.png" /></a>
+            </li>
+            <li>
+              <a class='has-tipsy' href='http://www.rss.com/' title='RSS'><img alt="Rss" src="/assets/social/RSS.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Top Header -->
+    </div>
+    <!-- End Region 1 Wrap -->
+    <!-- Region 2 Wrap -->
+    <div class='container region2wrap'>
+      <div class='row'>
+        <!-- Logo -->
+        <div class='three columns'>
+          <a href='index.html' id='logo'>
+          <h1>
+            Innovate
+            <span>Omaha</span>
+          </h1>
+        </div>
+        <!-- End Logo -->
+        <!-- Main Navigation -->
+        <div class='nine columns'>
+          <nav class='top-bar'>
+            <ul>
+              <!-- Toggle Button Mobile -->
+              <li class='name'>
+                <h1>
+                  <a href='#'>Please select your page</a>
+                </h1>
+              </li>
+              <li class='toggle-topbar'>
+                <a href='#'></a>
+              </li>
+              <!-- End Toggle Button Mobile -->
+            </ul>
+            <section>
+              <!-- Nav Section -->
+              <ul class='right' id='nav'>
+                <li class='has-dropdown'>
+                  <a href="/static_pages/home" id="home_nav">Home</a>
+                </li>
+                <li class='has-dropdown'>
+                  <a href="/static_pages/about" id="about_nav">About</a>
+                </li>
+                <li class='has-dropdown'>
+                  <a href="/static_pages/blog" id="blog_nav">Blog</a>
+                </li>
+                <li class='has-dropdown'>
+                  <a href="/static_pages/portfolio" id="portfolio_nav">Portfolio</a>
+                </li>
+                <li>
+                  <a href="/static_pages/contact" id="contact_nav">Contact</a>
+                </li>
+              </ul>
+            </section>
+            <!-- End Nav Section -->
+          </nav>
+        </div>
+        <!-- End Main Navigation -->
+      </div>
+    </div>
+    <!-- End Region 2 Wrap -->
+    <!-- Region 3 Wrap -->
+    <div class='container region3wrap'>
+      <!-- Content Top -->
+      <div class='row content_top'>
+        <div class='nine columns'>
+          <ul class="breadcrumbs"><li class="current"><a href="http://localhost:3000/">Home</a></li></ul>
+        </div>
+        <div class='three columns'>
+          <div class='row'>
+            <div class='twelve columns'>
+              <div class='row collapse top_search'>
+                <div class='ten mobile-three columns'>
+                  <input placeholder='Enter search terms' type='text'>
+                </div>
+                <div class='two mobile-one columns'>
+                  <a class='button icon-search' href='#'></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Content Top -->
+    </div>
+    <!-- End Region 3 Wrap -->
+    <!-- maincontent -->
+    <!-- Region 4 Wrap -->
+    <div class='container region4wrap'>
+      
+      <div class="row maincontent"> 
+        <div class="twelve columns">
+              
+                <div class="row">
+                  <div class="eight columns centered">
+                <h1 class="notfound_title">500</h1>
+                    <h2 class="notfound_subtitle">Oops...are you lost?</h2>            
+                  </div>
+                </div>
+                  
+        </div>
+              
+        <div class="twelve columns">
+              
+          <div class="row">
+                  
+             <div class="six columns centered">
+               <p class="notfound_description">The page you are looking for seems to be missing.Go back, or return to yourcompany.com to choose a new direction.Please report any broken links to our team.</p>
+              </div>   
+                      
+           </div>
+                  
+        </div>
+              
+        <div class="twelve columns">
+              
+          <div class="row">
+                  
+            <div class="four columns centered">
+              <a class="button expand bottom20" href="javascript: history.go(-1)"><i class="icon-undo"></i>Return to previous page</a>
+            </div> 
+                      
+          </div>
+                  
+        </div>
+      </div>
+    </div>
+    <!-- End Region 4 Wrap -->
+    <!-- End maincontent -->
+    <!-- Region 9 Wrap -->
+    <div class='container region9wrap'>
+      <!-- Bottom Content -->
+      <div class='row content_bottom'>
+        <!-- // // // // // // // // // // -->
+        <div class='eight columns' id='newsletter'>
+          <h2>Sign up for our newsletter</h2>
+          <p>Keep up-to-date with the latest news and updates by subscribing to our newsletter.</p>
+        </div>
+        <!-- // // // // // // // // // // -->
+        <div class='four columns'>
+          <form accept-charset="UTF-8" action="/users/newsletter" class="simple_form new_newsletter" data-remote="true" id="new_newsletter" method="get" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>  <div class='row collapse newsletter-input'>
+              <div class='eight mobile-three columns'>
+                <p><input class="string email optional" id="newsletter_email" label="false" name="newsletter[email]" pattern="\b[A-Z0-9._%a-z\-]+@(?:[A-Z0-9a-z\-]+\.)+[A-Za-z]{2,4}\z" size="50" type="text" /></p>
+              </div>
+              <div class='four mobile-one columns'>
+                <input class="button expand" name="commit" type="submit" value="Subscribe" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- // // // // // // // // // // -->
+      </div>
+      <!-- End Bottom Content -->
+      <!-- Footer -->
+      <div class='row footer'>
+        <!-- // // // // // // // // // // -->
+        <div class='four columns'>
+          <h4>About Us</h4>
+          <p>We say what we do, we do what we say, and we're looking forward to prove it to you.</p>
+          <ul class='vcard'>
+            <li class='address'>Omaha, NE. USA</li>
+            <li class='tel'>
+              <a href='https://github.com/innovateomaha'>github.com/innovateomaha</a>
+            </li>
+            <li class='email'>
+              <a href='innovateomaha@gmail.com'>innovateomaha@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <!-- // // // // // // // // // // -->
+        <div class='four columns'>
+          <h4>Latest Posts</h4>
+          <ul class='footer-list'>
+            <li>
+              <a href='#'>Mauris pellentesque laoreet lacus non condimentum.</a>
+            </li>
+            <li>
+              <a href='#'>Vestibulum vel diam orci vitae.</a>
+            </li>
+            <li>
+              <a href='#'>Suspendisse elementum magna sed lorem faucibus eleifend.</a>
+            </li>
+            <li>
+              <a href='#'>Phasellus placerat convallis congue.</a>
+            </li>
+            <li>
+              <a href='#'>Etiam vehicula lacus fringilla lacus tristique pretium.</a>
+            </li>
+          </ul>
+        </div>
+        <!-- // // // // // // // // // // -->
+        <div class='four columns'>
+          <h4>Latest Tweets</h4>
+          <div id='tweetFeed'></div>
+        </div>
+        <!-- // // // // // // // // // // -->
+      </div>
+      <!-- End Footer -->
+    </div>
+    <!-- End Region 9 Wrap -->
+    <!-- Region 10 Wrap -->
+    <div class='container region10wrap'>
+      <div class='row footer_bottom'>
+        <!-- Bottom -->
+        <!-- // // // // // // // // // // -->
+        <div class='six columns'>
+          <p class='copyright'>© 2012 TouchM by 4GraFx. All rights reserved</p>
+        </div>
+        <!-- // // // // // // // // // // -->
+        <div class='six columns'>
+          <ul class='link-list'>
+            <li><a href="/static_pages/home">Home</a></li>
+            <li><a href="/static_pages/about">About</a></li>
+            <li><a href="/static_pages/blog">Blog</a></li>
+            <li><a href="/static_pages/portfolio">Portfolio</a></li>
+            <li><a href="/static_pages/contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- // // // // // // // // // // -->
+        <!-- Bottom -->
+      </div>
+    </div>
+    <!-- End Region 10 Wrap -->
+    <!-- Back To Top -->
+    <a class='scrollup' href='#'>Scroll</a>
+    <!-- End Back To Top -->
+    <!-- Reveal Modal -->
+    <div class='reveal-modal login-modal' id='Login'>
+      <h2>Login</h2>
+      <p>Please login using your credentials recived by email when you register.</p>
+      <form>
+        <label>Username</label>
+        <input placeholder='UserName@TouchM.com' type='text'>
+        <label>Password</label>
+        <input placeholder='insert password' type='text'>
+        <p class='right'>
+          <a href='http://forums.orpalis.com/ucp.php?mode=sendpassword'>I forgot my password</a>
+          |
+          <a href='http://forums.orpalis.com/ucp.php?mode=resend_act'>Resend activation e-mail</a>
+        </p>
+        <input class='medium button' type='submit' value='Login!'>
+      </form>
+      <a class='close-reveal-modal'>×</a>
+    </div>
+    <!-- End Reveal Modal -->
+    <!-- Included JS Files (Compressed) -->
+    <script src="/assets/jquery.js?body=1" type="text/javascript"></script>
+    <script src="/assets/jquery_ujs.js?body=1" type="text/javascript"></script>
+    <script src="/assets/foundation/foundation.js?body=1" type="text/javascript"></script>
+    <script src="/assets/foundation/foundation.alerts.js?body=1" type="text/javascript"></script>
+    <script src="/assets/foundation/foundation.clearing.js?body=1" type="text/javascript"></script>
+    <script src="/assets/foundation/foundation.cookie.js?body=1" type="text/javascript"></script>
+    <script src="/assets/foundation/foundation.dropdown.js?body=1" type="text/javascript"></script>
+    <script src="/assets/foundation/foundation.forms.js?body=1" type="text/javascript"></script>
+    <script src="/assets/foundation/foundation.joyride.js?body=1" type="text/javascript"></script>
+    <script src="/assets/foundation/foundation.magellan.js?body=1" type="text/javascript"></script>
+    <script src="/assets/foundation/foundation.orbit.js?body=1" type="text/javascript"></script>
+    <script src="/assets/foundation/foundation.reveal.js?body=1" type="text/javascript"></script>
+    <script src="/assets/foundation/foundation.section.js?body=1" type="text/javascript"></script>
+    <script src="/assets/foundation/foundation.tooltips.js?body=1" type="text/javascript"></script>
+    <script src="/assets/foundation/foundation.topbar.js?body=1" type="text/javascript"></script>
+    <script src="/assets/foundation/foundation.interchange.js?body=1" type="text/javascript"></script>
+    <script src="/assets/foundation/foundation.placeholder.js?body=1" type="text/javascript"></script>
+    <script src="/assets/foundation/foundation.abide.js?body=1" type="text/javascript"></script>
+    <script src="/assets/foundation/index.js?body=1" type="text/javascript"></script>
+    <script src="/assets/foundation.min.js?body=1" type="text/javascript"></script>
+    <script src="/assets/modernizr.foundation.js?body=1" type="text/javascript"></script>
+    <script src="/assets/slider-revolution/jquery.themepunch.plugins.min.js?body=1" type="text/javascript"></script>
+    <script src="/assets/slider-revolution/jquery.themepunch.revolution.min.js?body=1" type="text/javascript"></script>
+    <script src="/assets/slider-revolution/index.js?body=1" type="text/javascript"></script>
+    <script src="/assets/tipsy/jquery.tipsy.js?body=1" type="text/javascript"></script>
+    <script src="/assets/caroulfredsel/jquery.carouFredSel-6.0.3-packed.js?body=1" type="text/javascript"></script>
+    <script src="/assets/touchswipe/jquery.touchSwipe.min.js?body=1" type="text/javascript"></script>
+    <script src="/assets/titan/prettify.js?body=1" type="text/javascript"></script>
+    <script src="/assets/titan/jquery.titanlighbox.js?body=1" type="text/javascript"></script>
+    <script src="/assets/titan/index.js?body=1" type="text/javascript"></script>
+    <script src="/assets/jtweetsanywhere/jquery.jtweetsanywhere-1.3.1.min.js?body=1" type="text/javascript"></script>
+    <script src="/assets/app-head.js?body=1" type="text/javascript"></script>
+    <script src="/assets/flexislider/jquery.flexslider.js?body=1" type="text/javascript"></script>
+    <script src="/assets/app.js?body=1" type="text/javascript"></script>
+    <script src="/assets/application.js?body=1" type="text/javascript"></script>
+  </body>
 </html>
