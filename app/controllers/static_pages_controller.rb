@@ -34,4 +34,14 @@ class StaticPagesController < ApplicationController
   def register
   end
 
+  def newsletter
+    @newsletter = Newsletter.new(params[:newsletter])
+     if @newsletter.valid?
+      UserMailer.welcome_email(@newsletter).deliver
+      render :newsletter
+    else
+      render :newsletter_fail
+    end
+  end
+
 end
