@@ -27,10 +27,11 @@
   / // // // // // // // // // //
   .four.columns
     %h4 Latest Tweets
-    %ul.footer-list#tweetFeed
-      - Twitter.favorites("railscasts", count: 3).each do |tweet|
-        %li
-          %a{:href => "#"}= "#{tweet.text} -" 
-          %a{:href => "#"}= "@#{tweet.user.screen_name}"
+    - cache "latesttweets#{Date.today}" do
+      %ul.footer-list#tweetFeed
+        - Testimony.order("tweet_id desc").limit(3).each do |tweet|
+          %li
+            %a{:href => "#"}= "#{tweet.text} -" 
+            %a{:href => "#"}= "@#{tweet.user.screen_name}"
   / // // // // // // // // // //
 / End Footer
