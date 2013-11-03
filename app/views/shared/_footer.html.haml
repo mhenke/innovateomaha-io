@@ -30,7 +30,7 @@
     %ul.footer-list#tweetFeed
       - Twitter.favorites("railscasts", count: 3).each do |tweet|
         %li
-          %a{:href => "#"}= "#{tweet.text} 
-            - @#{tweet.user.screen_name}"
+          %a{:href => "#"}= "#{tweet.text} -" 
+          %a{:href => "#"}= "@#{tweet.user.screen_name}"
   / // // // // // // // // // //
 / End Footer
