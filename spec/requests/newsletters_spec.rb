@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'Newsletter Subscription with email address', :js => true do
+describe 'Newsletter Subscription', :js => true do
 	it 'should email user when requesting newsletter' do
 		user = FactoryGirl.create(:user)
 		visit '/static_pages/construction'

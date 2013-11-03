@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe 'should email when filled out', :js => true do
-  it 'should email user when requesting newsletter' do
+describe 'Contact email', :js => true do
+  it 'should email website when submiting contact form' do
     user = FactoryGirl.create(:user)
     visit '/static_pages/contact'
     fill_in 'contact_name', :with => user.name
