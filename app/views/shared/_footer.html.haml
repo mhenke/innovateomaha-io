@@ -27,6 +27,10 @@
   / // // // // // // // // // //
   .four.columns
     %h4 Latest Tweets
-    #tweetFeed
+    %ul.footer-list#tweetFeed
+      - Twitter.favorites("railscasts", count: 3).each do |tweet|
+        %li
+          %a{:href => "#"}= "#{tweet.text} 
+            - @#{tweet.user.screen_name}"
   / // // // // // // // // // //
 / End Footer

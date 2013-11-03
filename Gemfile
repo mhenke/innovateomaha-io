@@ -11,6 +11,7 @@ gem 'mail'
 gem 'haml' 
 gem 'simple_form'
 gem 'active_attr'
+gem 'twitter'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
