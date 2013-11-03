@@ -42,7 +42,7 @@ $(document).ready(function(){
 
 $(window).load(function(){
 
-
+  if ($('#carousel-works').length ) {
 			//	Responsive layout, resizing the items
 			$('#carousel-works').carouFredSel({
 				responsive: true,
@@ -69,7 +69,8 @@ $(window).load(function(){
 					}
 				}
 			});
-			
+  };
+	if ($('.carousel-type2').length ) {		
 			//	Responsive layout, resizing the items
 			$('.carousel-type2').carouFredSel({
 				responsive: true,
@@ -96,9 +97,9 @@ $(window).load(function(){
 					}
 				}
 			});
-
+};
 		});
-
+  
 // Tooltips Tipsy 
 
 jQuery(window).load(function() {

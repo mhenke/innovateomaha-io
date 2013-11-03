@@ -55,7 +55,7 @@ jQuery('.mainslider').revolution(
 		delay:9000,
 		startheight:490,
 		startwidth:950,
-
+    
 		thumbWidth:100,
 		thumbHeight:50,
 		thumbAmount:4,
