@@ -17,10 +17,10 @@ class StaticPagesController < ApplicationController
     add_crumb 'Contact'
 
     @contact = Contact.new(params[:contact])
-    @mail = UserMailer.contact_email(@contact)
 
-    if @contact.valid? && @mail.deliver
-      render :email
+    if @contact.valid?
+      UserMailer.contact_email(@contact)
+      render :thank_you
     else
       render :contact
     end
@@ -37,7 +37,7 @@ class StaticPagesController < ApplicationController
   def newsletter
     @newsletter = Newsletter.new(params[:newsletter])
      if @newsletter.valid?
-      UserMailer.welcome_email(@newsletter).deliver
+      UserMailer.newsletter_email(@newsletter).deliver
       render :newsletter
     else
       render :newsletter_fail

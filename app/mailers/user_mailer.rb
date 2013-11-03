@@ -3,10 +3,10 @@ class UserMailer < ActionMailer::Base
   default to: 'henke.mike@gmail.com'
   default bcc: 'henke.mike@gmail.com'
   
-  def welcome_email(user)
-    @user = user
+  def newsletter_email(contact)
+    @contact = contact
     @url  = 'http://example.com/login'
-    mail to: @user.email, subject: 'Welcome to My Awesome Site'
+    mail to: @contact.email, subject: 'Welcome to My Awesome Site'
   end
 
   def contact_email(contact)
