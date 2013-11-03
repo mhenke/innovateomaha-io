@@ -23,13 +23,13 @@
     = csrf_meta_tags
   %body
     = render :partial => 'shared/region1'
-    = render :partial => 'shared/region2'
-    = render :partial => 'shared/region3'
+    = render :partial => 'shared/region2_construction'
+    = render :partial => 'shared/region3_construction'
     / maincontent
     = render :partial => 'shared/region4'
     / End maincontent
     = render :partial => 'shared/region9'
-    = render :partial => 'shared/region10'
+    = render :partial => 'shared/region10_construction'
     / Back To Top
     %a.scrollup{:href => "#"} Scroll
     / End Back To Top
@@ -49,5 +49,26 @@
         %input.medium.button{:type => "submit", :value => "Login!"}/
       %a.close-reveal-modal ×
     / End Reveal Modal
-    / Included JS Files (Compressed)
-    = javascript_include_tag "application"
+  / Included JS Files (Compressed)
+  = javascript_include_tag "application"
+  / Countdown
+  = javascript_include_tag "jquery.countdown.js"
+  :javascript
+    $(function() {
+      $('div#clock').countdown("2013/11/10", function(event) {
+        var $this = $(this);
+        switch(event.type) {
+          case "seconds":
+          case "minutes":
+          case "hours":
+          case "days":
+          case "weeks":
+          case "daysLeft":
+            $this.find('span#'+event.type).html(event.value);
+            break;
+          case "finished":
+            $this.hide();
+            break;
+          }
+        });
+      });

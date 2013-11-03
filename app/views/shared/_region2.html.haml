@@ -22,13 +22,13 @@
         %section
           / Nav Section
           %ul#nav.right
-            %li.has-dropdown
+            %li
               = link_to "Home", static_pages_home_path, id: 'home_nav', class: ( 'active' if yield(:title) == 'Home')
-            %li.has-dropdown
+            %li
               = link_to "About", static_pages_about_path, id: 'about_nav', class: ( 'active' if yield(:title) == 'About')
-            %li.has-dropdown
+            %li
               = link_to "Blog", static_pages_blog_path, id: 'blog_nav', class: ( 'active' if yield(:title) == 'Blog')
-            %li.has-dropdown
+            %li
               = link_to "Portfolio", static_pages_portfolio_path, id: 'portfolio_nav', class: ( 'active' if yield(:title) == 'Portfolio')
             %li
               = link_to "Contact", static_pages_contact_path, id: 'contact_nav', class: ( 'active' if yield(:title) == 'Contact')

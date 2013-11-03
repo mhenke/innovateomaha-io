@@ -11,15 +11,10 @@ describe 'Newsletter Subscription', :js => true do
     	last_email.body.encoded.should match('You have successfully signed up to example.com')
 	end
 
-  it 'should not allow blank email address' do
+  it 'should not allow blank email and show error multiple times' do
     visit '/static_pages/construction'
     click_button 'Subscribe'
     page.should have_content('Invalid entry')
-  end
-
-  it 'should not show error multiple times' do
-    visit '/static_pages/construction'
-    click_button 'Subscribe'
     click_button 'Subscribe'
     page.should have_selector('small#newsletter_error', :count => 1)
   end

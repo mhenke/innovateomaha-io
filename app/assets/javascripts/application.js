@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require foundation
 //= require foundation.min
 //= require modernizr.foundation
 //= require_tree ./slider-revolution

@@ -1,10 +1,10 @@
 class StaticPagesController < ApplicationController
 
   def construction
-    @construction_page = true
+    render layout: "construction"
   end
   def home
-    @home_page = true
+     render layout: "home"
   end
   def about
     add_crumb 'About'
