@@ -22,7 +22,7 @@ Innovateomaha::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
 
   match '(errors)/:status', to: 'errors#show', constraints: {status: /\d{3}/}
-
+  
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 

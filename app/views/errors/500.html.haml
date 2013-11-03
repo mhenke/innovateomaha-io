@@ -1,21 +1,18 @@
+- add_crumb "500"
 - provide(:title, '500')
 .row.maincontent
   .twelve.columns
     .row
       .eight.columns.centered
         %h1.notfound_title 500
-        %h2.notfound_subtitle
-        - if @exception
-          = @exception.message
-        - else
-          Oops...are you lost?
-.twelve.columns
-  .row
-    .six.columns.centered
-      %p.notfound_description The page you are looking for seems to be missing.Go back, or return to yourcompany.com to choose a new direction.Please report any broken links to our team.
-.twelve.columns
-  .row
-    .four.columns.centered
-      %a.button.expand.bottom20{href: "javascript: history.go(-1)"}
-        %i.icon-undo>
-        Return to previous page
+        %h2.notfound_subtitle Oops...are you lost?
+  .twelve.columns
+    .row
+      .six.columns.centered
+        %p.notfound_description The page you are looking for seems to be missing.Go back, or return to yourcompany.com to choose a new direction.Please report any broken links to our team.
+  .twelve.columns
+    .row
+      .four.columns.centered
+        %a.button.expand.bottom20{href: "javascript: history.go(-1)"}
+          %i.icon-undo>
+          Return to previous page
