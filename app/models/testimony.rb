@@ -3,9 +3,9 @@ class Testimony < ActiveRecord::Base
 
   def self.pull_tweets
     Twitter.favorites("railscasts").each do |tweet|
-      unless exists?(tweet_id: tweet.id)
+      unless exists?(tweet_id: tweet.id.to_s)
         create!(
-          tweet_id: tweet.id,
+          tweet_id: tweet.id.to_s,
           content: tweet.text,
           screen_name: tweet.user.screen_name,
         )
