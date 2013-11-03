@@ -1,6 +1,8 @@
 class UserMailer < ActionMailer::Base
-  default from: 'innovateomaha@gmail.com'
- 
+  default from: 'henke.mike@gmail.com'
+  default to: 'henke.mike@gmail.com'
+  default bcc: 'henke.mike@gmail.com'
+  
   def welcome_email(user)
     @user = user
     @url  = 'http://example.com/login'
@@ -10,6 +12,6 @@ class UserMailer < ActionMailer::Base
   def contact_email(contact)
     @contact = contact
     @url  = 'http://example.com/login'
-    mail to: 'henke.mike@gmail.com', subject: @contact.subject, from: @contact.email, subject: @contact.subject
+    mail subject: @contact.subject, from: @contact.email, body: @contact.message
   end
 end
