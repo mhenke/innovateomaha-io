@@ -27,11 +27,10 @@
   / // // // // // // // // // //
   .four.columns
     %h4 Latest Tweets
-    - cache "latesttweets#{Date.today}" do
-      %ul.footer-list#tweetFeed
-        - Testimony.order("tweet_id desc").limit(3).each do |testimony|
-          %li
-            %a{:href => "#"}= "#{testimony.text} -" 
-            %a{:href => "#"}= "@#{testimony.screen_name}"
+    %ul.footer-list#tweetFeed
+      - Testimony.order("tweet_id desc").limit(3).each do |testimony|
+        %li
+          %a{:href => "#"}= "#{testimony.text} -" 
+          %a{:href => "#"}= "@#{testimony.screen_name}"
   / // // // // // // // // // //
 / End Footer
