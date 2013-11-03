@@ -13,12 +13,13 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
     <!-- Set the viewport width to device width for mobile -->
     <meta content='width=device-width minimum-scale=1, maximum-scale=1' id='view' name='viewport'>
-    <title>InnovateOmaha:: 500</title>
+    <title>InnovateOmaha:: 404</title>
     <link href="/assets/application.css?body=1" media="all" rel="stylesheet" type="text/css" />
     <link href="/assets/foundation.min.css?body=1" media="all" rel="stylesheet" type="text/css" />
     <link href="/assets/app.css?body=1" media="all" rel="stylesheet" type="text/css" />
     <link href="/assets/style1.css?body=1" media="all" rel="stylesheet" type="text/css" />
     <link href="/assets/color1.css?body=1" media="all" rel="stylesheet" type="text/css" />
+    <link href="/assets/custom.css?body=1" media="all" rel="stylesheet" type="text/css" />
     <link href="/assets/titan/jquery.titanlighbox.css?body=1" media="all" rel="stylesheet" type="text/css" />
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&amp;amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -27,7 +28,7 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <meta content="authenticity_token" name="csrf-param" />
-    <meta content="566aIGJEW/klfT/OaGYq2D0nwjjVElQzVkkgK0X3uvc=" name="csrf-token" />
+    <meta content="SntTDyVgaFUnbSyQldrrs/ZlxxIXstxcRJ2Rv63KfKA=" name="csrf-token" />
   </head>
   <body>
     <!-- Region 1 Wrap -->
@@ -46,12 +47,8 @@
               <a href='#'>Site Map</a>
             </li>
           </ul>
-          <div class='login user-control'>
-            Hello,
-            <a href='#'>
-              John Smith
-              <span class='notification'>4</span>
-            </a>
+          <div class='login'>
+            <a class='button' data-reveal-id='Login' href='#'>Login</a>
           </div>
         </div>
         <div class='six columns'>
@@ -113,16 +110,16 @@
             <section>
               <!-- Nav Section -->
               <ul class='right' id='nav'>
-                <li class='has-dropdown'>
+                <li>
                   <a href="/static_pages/home" id="home_nav">Home</a>
                 </li>
-                <li class='has-dropdown'>
+                <li>
                   <a href="/static_pages/about" id="about_nav">About</a>
                 </li>
-                <li class='has-dropdown'>
+                <li>
                   <a href="/static_pages/blog" id="blog_nav">Blog</a>
                 </li>
-                <li class='has-dropdown'>
+                <li>
                   <a href="/static_pages/portfolio" id="portfolio_nav">Portfolio</a>
                 </li>
                 <li>
@@ -142,7 +139,7 @@
       <!-- Content Top -->
       <div class='row content_top'>
         <div class='nine columns'>
-          <ul class="breadcrumbs"><li class="current"><a href="http://localhost:3000/">Home</a></li></ul>
+          <ul class="breadcrumbs"><li><a href="http://localhost:3000/">Home</a></li><li><span>Status Code</span></li><li class="current"><span>404</span></li></ul>
         </div>
         <div class='three columns'>
           <div class='row'>
@@ -165,41 +162,29 @@
     <!-- maincontent -->
     <!-- Region 4 Wrap -->
     <div class='container region4wrap'>
-      
-      <div class="row maincontent"> 
-        <div class="twelve columns">
-              
-                <div class="row">
-                  <div class="eight columns centered">
-                <h1 class="notfound_title">500</h1>
-                    <h2 class="notfound_subtitle">Oops...are you lost?</h2>            
-                  </div>
-                </div>
-                  
-        </div>
-              
-        <div class="twelve columns">
-              
-          <div class="row">
-                  
-             <div class="six columns centered">
-               <p class="notfound_description">The page you are looking for seems to be missing.Go back, or return to yourcompany.com to choose a new direction.Please report any broken links to our team.</p>
-              </div>   
-                      
-           </div>
-                  
-        </div>
-              
-        <div class="twelve columns">
-              
-          <div class="row">
-                  
-            <div class="four columns centered">
-              <a class="button expand bottom20" href="javascript: history.go(-1)"><i class="icon-undo"></i>Return to previous page</a>
-            </div> 
-                      
+      <div class='row maincontent'>
+        <div class='twelve columns'>
+          <div class='row'>
+            <div class='eight columns centered'>
+              <h1 class='notfound_title'>404</h1>
+              <h2 class='notfound_subtitle'>Oops...are you lost?</h2>
+            </div>
           </div>
-                  
+        </div>
+        <div class='twelve columns'>
+          <div class='row'>
+            <div class='six columns centered'>
+              <p class='notfound_description'>The page you are looking for seems to be missing.Go back, or return to yourcompany.com to choose a new direction.Please report any broken links to our team.</p>
+            </div>
+          </div>
+        </div>
+        <div class='twelve columns'>
+          <div class='row'>
+            <div class='four columns centered'>
+              <a class='button expand bottom20' href='javascript: history.go(-1)'><i class='icon-undo'></i>Return to previous page
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -216,9 +201,9 @@
         </div>
         <!-- // // // // // // // // // // -->
         <div class='four columns'>
-          <form accept-charset="UTF-8" action="/users/newsletter" class="simple_form new_newsletter" data-remote="true" id="new_newsletter" method="get" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>  <div class='row collapse newsletter-input'>
+          <form accept-charset="UTF-8" action="/static_pages/newsletter" class="simple_form new_newsletter" data-remote="true" id="new_newsletter" method="get" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>  <div class='row collapse newsletter-input'>
               <div class='eight mobile-three columns'>
-                <p><input class="string email optional" id="newsletter_email" label="false" name="newsletter[email]" pattern="\b[A-Z0-9._%a-z\-]+@(?:[A-Z0-9a-z\-]+\.)+[A-Za-z]{2,4}\z" size="50" type="text" /></p>
+                <p><input class="string email optional" id="newsletter_email" label="false" name="newsletter[email]" pattern="\b[A-Z0-9._%a-z\-]+@(?:[A-Z0-9a-z\-]+\.)+[A-Za-z]{2,4}\z" placeholder="Enter email address" size="50" type="text" /></p>
               </div>
               <div class='four mobile-one columns'>
                 <input class="button expand" name="commit" type="submit" value="Subscribe" />
@@ -324,23 +309,6 @@
     <!-- Included JS Files (Compressed) -->
     <script src="/assets/jquery.js?body=1" type="text/javascript"></script>
     <script src="/assets/jquery_ujs.js?body=1" type="text/javascript"></script>
-    <script src="/assets/foundation/foundation.js?body=1" type="text/javascript"></script>
-    <script src="/assets/foundation/foundation.alerts.js?body=1" type="text/javascript"></script>
-    <script src="/assets/foundation/foundation.clearing.js?body=1" type="text/javascript"></script>
-    <script src="/assets/foundation/foundation.cookie.js?body=1" type="text/javascript"></script>
-    <script src="/assets/foundation/foundation.dropdown.js?body=1" type="text/javascript"></script>
-    <script src="/assets/foundation/foundation.forms.js?body=1" type="text/javascript"></script>
-    <script src="/assets/foundation/foundation.joyride.js?body=1" type="text/javascript"></script>
-    <script src="/assets/foundation/foundation.magellan.js?body=1" type="text/javascript"></script>
-    <script src="/assets/foundation/foundation.orbit.js?body=1" type="text/javascript"></script>
-    <script src="/assets/foundation/foundation.reveal.js?body=1" type="text/javascript"></script>
-    <script src="/assets/foundation/foundation.section.js?body=1" type="text/javascript"></script>
-    <script src="/assets/foundation/foundation.tooltips.js?body=1" type="text/javascript"></script>
-    <script src="/assets/foundation/foundation.topbar.js?body=1" type="text/javascript"></script>
-    <script src="/assets/foundation/foundation.interchange.js?body=1" type="text/javascript"></script>
-    <script src="/assets/foundation/foundation.placeholder.js?body=1" type="text/javascript"></script>
-    <script src="/assets/foundation/foundation.abide.js?body=1" type="text/javascript"></script>
-    <script src="/assets/foundation/index.js?body=1" type="text/javascript"></script>
     <script src="/assets/foundation.min.js?body=1" type="text/javascript"></script>
     <script src="/assets/modernizr.foundation.js?body=1" type="text/javascript"></script>
     <script src="/assets/slider-revolution/jquery.themepunch.plugins.min.js?body=1" type="text/javascript"></script>
