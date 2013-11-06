@@ -1,5 +1,7 @@
 Innovateomaha::Application.routes.draw do
   
+  mount Monologue::Engine, at: '/blog' # or whatever path, be it "/blog" or "/monologue"
+
   get "static_pages/construction"
   get "static_pages/home"
   get "static_pages/about"

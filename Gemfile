@@ -12,6 +12,7 @@ gem 'haml'
 gem 'simple_form'
 gem 'active_attr'
 gem 'twitter'
+gem "monologue"
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
