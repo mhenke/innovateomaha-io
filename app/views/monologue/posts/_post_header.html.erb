@@ -1,0 +1,12 @@
+<div class="twelve columns">
+  <h2 class="article_title"><%= link_to post.title, post.full_url %></h2>
+
+  <div class="article_meta">
+    <ul class="link-list">
+      <li class="post-date "><span class="icon-calendar"></span><a href="blog-inner.html"><%= I18n.localize(post.published_at.to_date, format: :long) %></a></li>
+      <li class="post-author"><span class="icon-user"></span><a href="blog-inner.html"> <%= post.user.name %></a></li>
+      <li class="post-categories"><span class="icon-tags"></span><a href="blog-inner.html">Illustrations</a></li>
+      <li class="post-comments"><span class="icon-comments"></span> <a href="<%= post.full_url + "#disqus_thread" %>"></a></li>
+      </ul>
+  </div>
+</div>
