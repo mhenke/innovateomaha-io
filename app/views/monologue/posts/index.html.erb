@@ -1,0 +1,158 @@
+<div class="row maincontent">
+    
+      <div class="twelve columns">
+          
+          <div class="page_title">
+        
+            <div class="row">
+              
+                <div class="twelve columns">
+                <h1>Welcome to our blog</h1>
+                </div>
+            
+              </div>
+                
+          </div>
+        
+        </div>
+    
+      <!-- Blog Content -->      
+    <div class="eight columns">
+        
+      <!-- Begin Article -->
+            <div class="row">
+
+
+              <%= render @posts %>
+
+            </div>
+      <!-- End  Article -->
+            
+            <hr class="article_hr"/>
+
+              <!-- Pagination -->
+            
+            <div class="row">
+            
+              <div class="twelve columns">
+              <% if @page %>
+              	<%= render partial: "pagination" %>
+              <% end %>
+              </div>
+            
+            </div>
+            
+            <!-- End Pagination -->
+            
+    </div>
+        <!-- End Blog Content -->
+
+          <!-- Sidebar Left -->
+        <div class="four columns sidebar-right">
+          
+          
+            <!-- Sidebar Widget -->
+            <div class="sidebar-widget">            
+              
+                <h3>Popular Articles</h3>
+                                        
+            <ul class="sidebar-list">
+              <li><a href="#"><span class="date"><i class="icon-calendar"></i>June 29, 2012</span>Erat nisl faucibus justo verit et quasi architecto beatae.</a></li>
+              <li><a href="#"><span class="date"><i class="icon-calendar"></i>June 29, 2012</span>Ut semper porttitor ipsum, et cursus erat volutpat vitae.</a></li>
+              <li><a href="#"><span class="date"><i class="icon-calendar"></i>June 29, 2012</span>Mauris porttitor nisi sit amet felis porta congue. </a></li>
+              <li><a href="#"><span class="date"><i class="icon-calendar"></i>June 29, 2012</span>Quisque ac felis felis, ornare sem. Proin ut nisi tortor. </a></li>
+              <li><a href="#"><span class="date"><i class="icon-calendar"></i>June 29, 2012</span>Erat nisl faucibus justo verit et quasi architecto beatae.</a></li>
+            </ul>
+                
+            </div>
+            <!-- End Sidebar Widget -->
+            
+            <!-- Sidebar Widget -->
+            <div class="sidebar-widget">            
+              
+                <h3>Text Widget</h3>
+                                        
+            <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <a href="#" class="button expand"><i class="icon-question-sign"></i>Need More Info?</a>
+                
+            </div>
+            <!-- End Sidebar Widget -->
+            
+            <!-- Sidebar Widget -->
+            <div class="sidebar-widget">            
+              
+                <h3>Blog Archives</h3>
+                                        
+            <ul class="toggle-view">
+                
+          <li>
+            <h2>November 2012</h2><span><i class="icon-plus"></i></span>
+          
+                      <div class="toggle-content">
+              <ul class="disc">
+                              <li><a href="index.html">Illustration A to Z</a></li>
+                                <li><a href="#">Web Design technics</a></li>
+                                <li><a href="#">3D Design</a></li>
+                                <li><a href="#">HTML5 / CSS3</a></li>
+                                <li><a href="#">UI design</a></li>
+                                <li><a href="#">Uncategorized</a></li>
+                            </ul>
+            </div>
+          
+                    </li>
+        
+                  <li>
+            <h2>Octomber 2012</h2><span><i class="icon-plus"></i></span>
+              
+                        <div class="toggle-content">
+              <ul class="disc">
+                              <li><a href="#">Illustration A to Z</a></li>
+                                <li><a href="#">Web Design technics</a></li>
+                                <li><a href="#">3D Design</a></li>
+                                <li><a href="#">HTML5 / CSS3</a></li>
+                                <li><a href="#">UI design</a></li>
+                                <li><a href="#">Uncategorized</a></li>
+                            </ul>
+            </div>
+          </li>
+                    
+          <li>
+            <h2>September 2012</h2><span><i class="icon-plus"></i></span>
+
+            <div class="toggle-content">
+              <ul class="disc">
+                              <li><a href="#">Illustration A to Z</a></li>
+                                <li><a href="#">Web Design technics</a></li>
+                                <li><a href="#">3D Design</a></li>
+                                <li><a href="#">HTML5 / CSS3</a></li>
+                                <li><a href="#">UI design</a></li>
+                                <li><a href="#">Uncategorized</a></li>
+                            </ul>
+            </div>
+          </li>
+                    
+                    <li>
+            <h2>August 2012</h2><span><i class="icon-plus"></i></span>
+
+            <div class="toggle-content">
+              <ul class="disc">
+                              <li><a href="#">Illustration A to Z</a></li>
+                                <li><a href="#">Web Design technics</a></li>
+                                <li><a href="#">3D Design</a></li>
+                                <li><a href="#">HTML5 / CSS3</a></li>
+                                <li><a href="#">UI design</a></li>
+                                <li><a href="#">Uncategorized</a></li>
+                            </ul>
+            </div>
+          </li>
+                    
+        </ul>
+                
+            </div>
+            <!-- End Sidebar Widget -->     
+          
+        
+      </div>
+        <!-- End Sidebar Left -->
+
+</div>
