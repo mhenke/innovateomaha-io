@@ -4,7 +4,7 @@
   %p Keep up-to-date with the latest news and updates by subscribing to our newsletter.
 / // // // // // // // // // //
 .four.columns
-  = simple_form_for @newsletter, url: static_pages_newsletter_path , method:'get', remote: true do |f|
+  = simple_form_for @newsletter, url: main_app.static_pages_newsletter_path , method:'get', remote: true do |f|
     .row.collapse.newsletter-input
       .eight.mobile-three.columns
         %p= f.input_field :email, label: false, placeholder: 'Enter email address'

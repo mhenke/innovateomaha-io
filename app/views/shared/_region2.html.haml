@@ -23,15 +23,15 @@
           / Nav Section
           %ul#nav.right
             %li
-              = link_to "Home", static_pages_home_path, id: 'home_nav', class: ( 'active' if yield(:title) == 'Home')
+              = link_to "Home", main_app.static_pages_home_path, id: 'home_nav', class: ( 'active' if yield(:title) == 'Home')
             %li
-              = link_to "About", static_pages_about_path, id: 'about_nav', class: ( 'active' if yield(:title) == 'About')
+              = link_to "About", main_app.static_pages_about_path, id: 'about_nav', class: ( 'active' if yield(:title) == 'About')
             %li
-              = link_to "Blog", static_pages_blog_path, id: 'blog_nav', class: ( 'active' if yield(:title) == 'Blog')
+              = link_to "Blog", main_app.static_pages_blog_path, id: 'blog_nav', class: ( 'active' if yield(:title) == 'Blog')
             %li
-              = link_to "Portfolio", static_pages_portfolio_path, id: 'portfolio_nav', class: ( 'active' if yield(:title) == 'Portfolio')
+              = link_to "Portfolio", main_app.static_pages_portfolio_path, id: 'portfolio_nav', class: ( 'active' if yield(:title) == 'Portfolio')
             %li
-              = link_to "Contact", static_pages_contact_path, id: 'contact_nav', class: ( 'active' if yield(:title) == 'Contact')
+              = link_to "Contact", main_app.static_pages_contact_path, id: 'contact_nav', class: ( 'active' if yield(:title) == 'Contact')
         / End Nav Section
     / End Main Navigation
 / End Region 2 Wrap
