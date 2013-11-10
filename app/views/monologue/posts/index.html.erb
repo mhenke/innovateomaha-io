@@ -1,42 +1,25 @@
 <%  add_crumb 'Blog' %>
-
 <div class="row maincontent">
-  
   <div class="twelve columns">
-    
     <%= render 'shared/blog_title' %>
-    
   </div>
-  
   <!-- Blog Content -->
-  
   <div class="eight columns">
-    
     <%= render @posts %>
-      
       <!-- Pagination -->
-      
       <div class="row">
-        
         <div class="twelve columns">
           <% if @page %>
             <%= render partial: "pagination" %>
               <% end %>
         </div>
-        
-      </div>
-                
+      </div>  
   <!-- End Pagination -->
   </div>
-            
   <!-- End Blog Content -->
-
   <!-- Sidebar Left -->
   <div class="four columns sidebar-right">
-    
     <%= render 'layouts/monologue/application/sidebar' %>
-    
   </div>
   <!-- End Sidebar Left -->
-  
 </div>

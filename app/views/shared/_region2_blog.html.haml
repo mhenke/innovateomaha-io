@@ -1,0 +1,37 @@
+/ Region 2 Wrap
+.container.region2wrap
+  .row
+    / Logo
+    .four.columns
+      %a#logo{:href => "index.html"}/
+      %h1
+        Innovate
+        %span Omaha
+    / End Logo
+    / Main Navigation
+    .eight.columns
+      %nav.top-bar
+        %ul
+          / Toggle Button Mobile
+          %li.name
+            %h1
+              %a{:href => "#"} Please select your page
+          %li.toggle-topbar
+            %a{:href => "#"}
+          / End Toggle Button Mobile
+        %section
+          / Nav Section
+          %ul#nav.right
+            %li
+              = link_to "Home", main_app.static_pages_home_path, id: 'home_nav', class: ( 'active' if yield(:title) == 'Home')
+            %li
+              = link_to "About", main_app.static_pages_about_path, id: 'about_nav', class: ( 'active' if yield(:title) == 'About')
+            %li
+              = link_to "Blog", monologue.root_path, id: 'blog_nav', class: 'active'
+            %li
+              = link_to "Portfolio", main_app.static_pages_portfolio_path, id: 'portfolio_nav', class: ( 'active' if yield(:title) == 'Portfolio')
+            %li
+              = link_to "Contact", main_app.static_pages_contact_path, id: 'contact_nav', class: ( 'active' if yield(:title) == 'Contact')
+        / End Nav Section
+    / End Main Navigation
+/ End Region 2 Wrap

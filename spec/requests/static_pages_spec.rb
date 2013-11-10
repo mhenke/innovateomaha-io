@@ -22,7 +22,6 @@ describe "Static Pages" do
 			visit '/static_pages/home' 
 			page.should have_content('We create custom-built, marketing-driven website solutions and online environments that ensure your brand delivers on form and functionality.')
 		end
-		
 
 		it "should have correct title" do
 			visit '/static_pages/home' 
