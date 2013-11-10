@@ -1,3 +1,7 @@
+<%  add_crumb 'Blog', root_path %>
+
+<%  add_crumb @post.title %>
+
 <div class="row maincontent">
 
   <div class="twelve columns">
@@ -29,7 +33,7 @@
           <%= raw @post.content %>
         </div>
       </div>
-      
+
     	<div class="tags" data-monologue="tags">
         <%= render @post.tags %>
       </div>
