@@ -6,7 +6,7 @@ Innovateomaha::Application.configure do
 
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
-  config.action_controller.perform_caching = true
+  config.action_controller.perform_caching = false
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
   config.serve_static_assets = false
@@ -19,8 +19,6 @@ Innovateomaha::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
-
-  ActionController::Base.perform_caching = true
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
