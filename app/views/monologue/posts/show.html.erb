@@ -2,43 +2,53 @@
 
   <div class="twelve columns">
           
-          <div class="page_title">
-            <div class="row">
-              <div class="twelve columns">
-                <h1>Welcome to our blog</h1>
-              </div>
-            </div>
-          </div>
-        
+    <div class="page_title">
+      <div class="row">
+        <div class="twelve columns">
+          <h1>Welcome to our blog</h1>
         </div>
-    
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="eight columns">
+    <!-- Begin Article -->
+    <div class="row">
+      <% content_for :title do %>
+        <%= @post.title %>
+      <% end %>
+
+      <% content_for :meta_description do %>
+        <%= truncate(strip_tags(@post.content), length: 155) %>
+      <% end %>
+
+      <%= render partial: 'monologue/posts/post_header', locals: {post: @post }%>
       <div class="twelve columns">
+        <div class="article_content">
+          <%= raw @post.content %>
+        </div>
+      </div>
+      
+    	<div class="tags" data-monologue="tags">
+        <%= render @post.tags %>
+      </div>
 
-<% content_for :title do %>
-  <%= @post.title %>
-<% end %>
+      <%= render "monologue/posts/social_sharing" %>
 
-<% content_for :meta_description do %>
-  <%= truncate(strip_tags(@post.content), length: 155) %>
-<% end %>
-
-<article>
-  <%= render partial: 'monologue/posts/post_header', locals: {post: @post }%>
-  <div class="content" data-monologue="content">
-    <%= raw @post.content %>
+      <div id="disqus_thread"></div>
+      <%= render 'layouts/monologue/application/disqus_embed' %>
+      <noscript>Please enable JavaScript to view the comments.</noscript>
+    </div>
+    <!-- End Article -->
   </div>
 
-	<div class="tags" data-monologue="tags">
-    <%= render @post.tags %>
+    <!-- Sidebar Left -->
+  <div class="four columns sidebar-right">
+    
+    <%= render 'layouts/monologue/application/sidebar' %>
+    
   </div>
-
-  <%= render "monologue/posts/social_sharing" %>
-
-  <div id="disqus_thread"></div>
-  <%= render 'layouts/monologue/application/disqus_embed' %>
-  <noscript>Please enable JavaScript to view the comments.</noscript>
-</article>
-
-</div>
+  <!-- End Sidebar Left -->
 
 </div>
