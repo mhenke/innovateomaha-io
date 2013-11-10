@@ -14,16 +14,9 @@
   .four.columns
     %h4 Latest Posts
     %ul.footer-list
-      %li
-        %a{:href => "#"} Mauris pellentesque laoreet lacus non condimentum.
-      %li
-        %a{:href => "#"} Vestibulum vel diam orci vitae.
-      %li
-        %a{:href => "#"} Suspendisse elementum magna sed lorem faucibus eleifend.
-      %li
-        %a{:href => "#"} Phasellus placerat convallis congue.
-      %li
-        %a{:href => "#"} Etiam vehicula lacus fringilla lacus tristique pretium.
+      - @recent_posts.first(5).each do |post|
+        %li
+          = link_to post.title, post.full_url 
   / // // // // // // // // // //
   .four.columns
     %h4 Latest Tweets
