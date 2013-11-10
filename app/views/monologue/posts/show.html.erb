@@ -1,5 +1,6 @@
-<%  add_crumb 'Blog', root_path %>
+<%  provide(:title, 'Blog')  %>
 
+<%  add_crumb 'Blog', root_path %>
 <%  add_crumb @post.title %>
 
 <div class="row maincontent">
