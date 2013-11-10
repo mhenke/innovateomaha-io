@@ -1,51 +1,48 @@
 <div class="row maincontent">
+  
+  <div class="twelve columns">
     
-      <div class="twelve columns">
-          
-          <div class="page_title">
-            <div class="row">
-              <div class="twelve columns">
-                <h1>Welcome to our blog</h1>
-              </div>
-            </div>
-          </div>
-        
+    <div class="page_title">
+      <div class="row">
+        <div class="twelve columns">
+          <h1>
+            Welcome to our blog
+          </h1>
         </div>
+      </div>
+    </div>
     
-      <!-- Blog Content -->      
-    <div class="eight columns">
-        
+  </div>
+  
+  <!-- Blog Content -->
+  
+  <div class="eight columns">
+    
+    <%= render @posts %>
       
-
-
-              <%= render @posts %>
-
-         
-            
-
-              <!-- Pagination -->
-            
-            <div class="row">
-            
-              <div class="twelve columns">
-              <% if @page %>
-              	<%= render partial: "pagination" %>
-              <% end %>
-              </div>
-            
-            </div>
-            
-            <!-- End Pagination -->
-      </div>          
-   
-        <!-- End Blog Content -->
-
-          <!-- Sidebar Left -->
-        <div class="four columns sidebar-right">
-          
-            <%= render 'layouts/monologue/application/sidebar' %>         
+      <!-- Pagination -->
+      
+      <div class="row">
         
+        <div class="twelve columns">
+          <% if @page %>
+            <%= render partial: "pagination" %>
+              <% end %>
         </div>
-        <!-- End Sidebar Left -->
+        
+      </div>
+                
+  <!-- End Pagination -->
+  </div>
+            
+  <!-- End Blog Content -->
 
+  <!-- Sidebar Left -->
+  <div class="four columns sidebar-right">
+    
+    <%= render 'layouts/monologue/application/sidebar' %>
+    
+  </div>
+  <!-- End Sidebar Left -->
+  
 </div>

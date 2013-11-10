@@ -4,7 +4,7 @@
       <li>
         <%= link_to post.full_url do %>
           <span class="date"><i class="icon-calendar"></i>
-            <%= post.published_at %>
+            <%= I18n.localize(post.published_at.to_date, format: :long) %>
           </span>
           <%= post.title %>
         <% end %>
