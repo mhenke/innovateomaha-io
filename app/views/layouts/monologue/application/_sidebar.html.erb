@@ -1,0 +1,9 @@
+<% if Monologue.sidebar %>
+<!-- Sidebar Widget -->
+<aside class="sidebar-widget">
+   <% Monologue.sidebar.each do |ext| %>
+     <%= render partial: "monologue/sidebar/#{ext}" %>
+   <% end %>
+</aside>
+<!-- End Sidebar Widget -->
+<% end %>

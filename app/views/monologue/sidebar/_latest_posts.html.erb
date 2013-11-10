@@ -1,0 +1,14 @@
+<%= sidebar_section_for(t(".title")) do  %>
+  <ul class="sidebar-list">
+    <% @recent_posts.each do |post| %>
+      <li>
+        <%= link_to post.full_url do %>
+          <span class="date"><i class="icon-calendar"></i>
+            <%= post.published_at %>
+          </span>
+          <%= post.title %>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
