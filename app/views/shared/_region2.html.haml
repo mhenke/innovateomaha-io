@@ -27,7 +27,7 @@
             %li
               = link_to "About", main_app.static_pages_about_path, id: 'about_nav', class: ( 'active' if yield(:title) == 'About')
             %li
-              = link_to "Blog", main_app.static_pages_blog_path, id: 'blog_nav', class: ( 'active' if yield(:title) == 'Blog')
+              = link_to "Blog", monologue.root_path, id: 'blog_nav', class: ( 'active' if yield(:title) == 'Blog')
             %li
               = link_to "Portfolio", main_app.static_pages_portfolio_path, id: 'portfolio_nav', class: ( 'active' if yield(:title) == 'Portfolio')
             %li
