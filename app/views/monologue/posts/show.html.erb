@@ -1,5 +1,3 @@
-<%  provide(:title, 'Blog')  %>
-
 <%  add_crumb 'Blog', root_path %>
 <%  add_crumb @post.title %>
 
@@ -7,13 +5,7 @@
 
   <div class="twelve columns">
           
-    <div class="page_title">
-      <div class="row">
-        <div class="twelve columns">
-          <h1>Welcome to our blog</h1>
-        </div>
-      </div>
-    </div>
+    <%= render 'shared/blog_title' %>
   
   </div>
 
