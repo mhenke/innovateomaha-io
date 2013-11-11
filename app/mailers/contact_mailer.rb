@@ -1,4 +1,4 @@
-class UserMailer < ActionMailer::Base
+class ContactMailer < ActionMailer::Base
   default from: 'henke.mike@gmail.com'
   default to: 'henke.mike@gmail.com'
   default bcc: 'henke.mike@gmail.com'

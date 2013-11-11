@@ -19,7 +19,7 @@ class StaticPagesController < ApplicationController
     @contact = Contact.new(params[:contact])
 
     if @contact.valid?
-      UserMailer.contact_email(@contact)
+      ContactMailer.contact_email(@contact)
       render :thank_you
     else
       render :contact
@@ -37,7 +37,7 @@ class StaticPagesController < ApplicationController
   def newsletter
     @newsletter = Newsletter.new(params[:newsletter])
      if @newsletter.valid?
-      UserMailer.newsletter_email(@newsletter).deliver
+      ContactMailer.newsletter_email(@newsletter).deliver
       render :newsletter
     else
       render :newsletter_fail

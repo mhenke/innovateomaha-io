@@ -1,4 +1,4 @@
-= simple_form_for @contact, url: static_pages_email_path , method:'get' do |f|
+= simple_form_for @contact, url: static_pages_email_path , method:'get', remote: true do |f|
   .row
     .twelve.columns
       = f.error_notification
@@ -12,6 +12,6 @@
   .row
     .twelve.columns
       = f.error :base
-      = f.input :message, as: :text
+      = f.input :message, as: :text, pattern: ".{10,1000}", input_html: { title: "10 characters minimum" }
   / %a.medium.button{:href => "#"} Submit
   = f.button :submit, "Submit", class:"medium button"
