@@ -25,15 +25,9 @@ class StaticPagesController < ApplicationController
       render :contact
     end
   end
-  def blog
-    add_crumb 'Blog'
-  end
   def portfolio
     add_crumb 'Portfolio'
   end
-  def register
-  end
-
   def newsletter
     @newsletter = Newsletter.new(params[:newsletter])
      if @newsletter.valid?

@@ -23,14 +23,14 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     = csrf_meta_tags
   %body
-    = render :partial => 'shared/region1'
-    = render :partial => 'shared/region2_blog'
-    = render :partial => 'shared/region3'
+    = render :partial => 'shared/region/region1'
+    = render :partial => 'shared/region/region2_blog'
+    = render :partial => 'shared/region/region3'
     / maincontent
-    = render :partial => 'shared/region4'
+    = render :partial => 'shared/region/region4'
     / End maincontent
-    = render :partial => 'shared/region9'
-    = render :partial => 'shared/region10'
+    = render :partial => 'shared/region/region9'
+    = render :partial => 'shared/region/region10'
     / Back To Top
     %a.scrollup{:href => "#"} Scroll
     / End Back To Top
