@@ -1,0 +1,13 @@
+/ Reveal Modal
+#Login.reveal-modal.login-modal
+  %h2 Login
+  %p Please login using your credentials.
+  = form_tag monologue.admin_sessions_path do
+    %label Username
+    = label_tag :email, t(".email")
+    = text_field_tag :email, params[:email]
+    = label_tag :password, t(".password")
+    = password_field_tag :password
+    %input.medium.button{:type => "submit", :value => "Login!"}/
+  %a.close-reveal-modal ×
+/ End Reveal Modal

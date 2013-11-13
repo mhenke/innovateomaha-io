@@ -1,4 +1,4 @@
-Innovateomaha::Application.routes.draw do
+OpenNebraska::Application.routes.draw do
   
   mount Monologue::Engine, at: '/blog' # or whatever path, be it "/blog" or "/monologue"
 

@@ -34,21 +34,6 @@
     / Back To Top
     %a.scrollup{:href => "#"} Scroll
     / End Back To Top
-    / Reveal Modal
-    #Login.reveal-modal.login-modal
-      %h2 Login
-      %p Please login using your credentials recived by email when you register.
-      %form
-        %label Username
-        %input{:placeholder => "UserName@TouchM.com", :type => "text"}/
-        %label Password
-        %input{:placeholder => "insert password", :type => "text"}/
-        %p.right
-          %a{:href => "http://forums.orpalis.com/ucp.php?mode=sendpassword"} I forgot my password
-          |
-          %a{:href => "http://forums.orpalis.com/ucp.php?mode=resend_act"} Resend activation e-mail
-        %input.medium.button{:type => "submit", :value => "Login!"}/
-      %a.close-reveal-modal ×
-    / End Reveal Modal
+    = render :partial => 'shared/login'
     / Included JS Files (Compressed)
     = javascript_include_tag "application"

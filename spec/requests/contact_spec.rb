@@ -19,7 +19,7 @@ describe 'Contact email', :js => true do
     click_button 'Submit'
     page.should have_content('Please review the problems below:')
     page.should have_content('We love to stay in touch')
-    page.should have_selector('title', :text => "InnovateOmaha:: Contact")
+    page.should have_selector('title', :text => "OpenNebraska:: Contact")
     page.find('#contact_nav')['active']
     page.should have_xpath("//li[@class='current']//span[contains(.,'Contact')]")
   end

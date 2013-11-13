@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Innovateomaha::Application.load_tasks
+OpenNebraska::Application.load_tasks

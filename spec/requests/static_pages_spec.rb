@@ -11,7 +11,7 @@ describe "Static Pages" do
 
 		it "should have correct title" do
 			visit '/static_pages/construction' 
-			page.should have_selector('title', :text => "InnovateOmaha:: Construction")
+			page.should have_selector('title', :text => "OpenNebraska:: Construction")
 		end
 
 	end
@@ -25,7 +25,7 @@ describe "Static Pages" do
 
 		it "should have correct title" do
 			visit '/static_pages/home' 
-			page.should have_selector('title', :text => "InnovateOmaha:: Home")
+			page.should have_selector('title', :text => "OpenNebraska:: Home")
 		end
 
 		it "nav section should be highlighted" do
@@ -49,7 +49,7 @@ describe "Static Pages" do
 
 		it "should have correct title" do
 			visit '/static_pages/about' 
-			page.should have_selector('title', :text => "InnovateOmaha:: About")
+			page.should have_selector('title', :text => "OpenNebraska:: About")
 		end
 
 		it "breadcrumb should be current" do
@@ -68,7 +68,7 @@ describe "Static Pages" do
 
 		it "should have correct title" do
 			visit '/static_pages/contact' 
-			page.should have_selector('title', :text => "InnovateOmaha:: Contact")
+			page.should have_selector('title', :text => "OpenNebraska:: Contact")
 		end
 
 		it "nav section should be highlighted" do
@@ -92,7 +92,7 @@ describe "Static Pages" do
 
 		it "should have correct title" do
 			visit '/static_pages/blog' 
-			page.should have_selector('title', :text => "InnovateOmaha:: Blog")
+			page.should have_selector('title', :text => "OpenNebraska:: Blog")
 		end
 
 		it "nav section should be highlighted" do
@@ -116,7 +116,7 @@ describe "Static Pages" do
 
 		it "should have correct title" do
 			visit '/static_pages/portfolio' 
-			page.should have_selector('title', :text => "InnovateOmaha:: Portfolio")
+			page.should have_selector('title', :text => "OpenNebraska:: Portfolio")
 		end
 
 		it "nav section should be highlighted" do
@@ -139,7 +139,7 @@ describe "Static Pages" do
 
 		it "should have correct title" do
 			visit '/static_pages/register' 
-			page.should have_selector('title', :text => "InnovateOmaha:: Register")
+			page.should have_selector('title', :text => "OpenNebraska:: Register")
 		end
 		
 	end

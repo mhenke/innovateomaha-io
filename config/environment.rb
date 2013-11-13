@@ -2,6 +2,6 @@
 require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
-Innovateomaha::Application.initialize!
+OpenNebraska::Application.initialize!
 
 ActionMailer::Base.default :content_type => "text/html"
