@@ -22,7 +22,7 @@ class StaticPagesController < ApplicationController
     if @contact.valid? && @email.deliver
       render :thank_you
     else
-      render :contact
+      render :email
     end
   end
   def portfolio

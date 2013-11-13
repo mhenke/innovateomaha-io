@@ -1,1 +1,5 @@
-alert("validation")
+$("#contact_error").remove();
+$("#new_contact").prepend("<p id='contact_error' class='error'></p>")
+<% @contact.errors.full_messages.each do |error| %>
+  $("#contact_error").prepend("<small><%= escape_javascript( error ) %></small>")
+<% end %>
