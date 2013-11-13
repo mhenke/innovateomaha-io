@@ -1,5 +1,5 @@
 $("#contact_error").remove();
-$("#new_contact").prepend("<p id='contact_error' class='error'></p>")
+$("#new_contact").prepend("<div id='contact_error' class='error'></div>")
 <% @contact.errors.full_messages.each do |error| %>
   $("#contact_error").prepend("<small><%= escape_javascript( error ) %></small>")
 <% end %>
